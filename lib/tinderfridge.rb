@@ -6,4 +6,6 @@ end
 
   version
 
+  ip_connection
+
 ).each { |m| require "tinderfridge/#{m}" }
