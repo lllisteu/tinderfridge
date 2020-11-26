@@ -8,4 +8,6 @@ end
 
   ip_connection
 
+  device
+
 ).each { |m| require "tinderfridge/#{m}" }
