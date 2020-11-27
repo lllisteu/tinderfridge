@@ -12,6 +12,9 @@ module Tinkerforge
           sleep 0.5
         end
         set_status_led_config state
+        seconds
+      else
+        false
       end
     end
 
