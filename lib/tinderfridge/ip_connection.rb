@@ -6,6 +6,10 @@ module Tinkerforge
 
     attr_reader :host, :port
 
+    def inspect
+      "%s (%s:%s)" % [self.class, host, port]
+    end
+
   end
 
   # Creates an IP Connection object connected to the given host and port.
