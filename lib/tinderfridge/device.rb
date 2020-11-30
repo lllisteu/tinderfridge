@@ -3,13 +3,11 @@ require 'tinkerforge/ip_connection'
 module Tinkerforge
   class Device
 
+    attr_reader :ipcon
+
     # Returns a programmer-friendly representation of the device.
     def inspect
-      if (instance_variable_defined? :@ipcon) and (instance_variable_defined? :@uid_string)
-        "%s (%s@%s:%s)" % [self.class, @uid_string, @ipcon.host, @ipcon.port]
-      else
-        super
-      end
+      "%s (%s@%s:%s)" % [self.class, @uid_string, ipcon.host, ipcon.port]
     end
 
     # Identifies a Brick, Bricklet, or other Tinkerforge component by blinking its status led.
