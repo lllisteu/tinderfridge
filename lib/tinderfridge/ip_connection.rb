@@ -1,7 +1,6 @@
 require 'tinkerforge/ip_connection'
 
 module Tinkerforge
-
   class IPConnection
 
     attr_reader :host, :port
@@ -21,5 +20,4 @@ module Tinkerforge
     ipcon.connect host, port
     ipcon
   end
-
 end
