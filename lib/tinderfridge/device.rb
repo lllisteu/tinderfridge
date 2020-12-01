@@ -3,6 +3,25 @@ require 'tinkerforge/ip_connection'
 module Tinkerforge
   class Device
 
+    #----------------------------------------------------------------------#
+    #                            Class Methods                             #
+    #----------------------------------------------------------------------#
+
+    class << self
+
+      # Returns all classes that inherited from this class.
+      # With help from:
+      # - https://stackoverflow.com/questions/2393697
+      def descendants
+        ObjectSpace.each_object(Class).select { |klass| klass < self }
+      end
+
+    end
+
+    #----------------------------------------------------------------------#
+    #                           Instance Methods                           #
+    #----------------------------------------------------------------------#
+
     attr_reader :ipcon
 
     # Returns a programmer-friendly representation of the device.
