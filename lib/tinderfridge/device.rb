@@ -16,6 +16,22 @@ module Tinkerforge
         ObjectSpace.each_object(Class).select { |klass| klass < self }
       end
 
+      # Returns a map of currently defined device classes.
+      def class_map
+        descendants.map do |klass|
+          if klass.const_defined? 'DEVICE_IDENTIFIER'
+            [
+              klass.const_get('DEVICE_IDENTIFIER'),
+              klass,
+              File.basename(klass.const_source_location('DEVICE_IDENTIFIER').first, '.rb'),
+              klass.const_get('DEVICE_DISPLAY_NAME')
+            ]
+          else
+            nil
+          end
+        end.compact.sort_by { |i| i[0] }
+      end
+
     end
 
     #----------------------------------------------------------------------#
