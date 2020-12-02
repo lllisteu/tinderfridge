@@ -1,10 +1,12 @@
 require 'tinkerforge/ip_connection'
 
 module Tinkerforge
+
   class IPConnection
 
     attr_reader :host, :port
 
+    # Returns a programmer-friendly representation of the object.
     def inspect
       "%s (%s:%s)" % [self.class, host, port]
     end
@@ -20,4 +22,5 @@ module Tinkerforge
     ipcon.connect host, port
     ipcon
   end
+
 end

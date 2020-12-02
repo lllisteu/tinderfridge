@@ -4,15 +4,21 @@
 
 ## Unreleased
 
-* `Tinkerforge.connect` creates and connects a `Tinkerforge::IPConnection` object, with useful defaults for `host` and `port`.
-* `Tinkerforge::IPConnection` class:
-    * Gains a terse `#inspect` method.
-    * Gains `#host` and `#port` methods.
-* All Brick and Bricklet classes:
-    * Gain a terse `#inspect` method.
-    * Gain an `#ipcon` method.
-    * Gain an `#identify` method.
-* `Tinkerforge.about` reports Tinkerforge and Tinderfridge versions.
+* `Tinkerforge` gains:
+    * `.connect` method, with useful defaults for `host` and `port`.
+    * `.lib_dir` method.
+    * `.require_everything` method.
+    * `.about` method.
+* `Tinkerforge::IPConnection` gains:
+    * A terse `#inspect` method.
+    * `#host` and `#port` methods.
+* `Tinkerforge::Device` gains:
+    * `.descendants` method.
+    * `.class_map` method.
+* All Brick and Bricklet classes gain:
+    * A terse `#inspect` method.
+    * `#ipcon` method.
+    * `#identify` method.
 
 ## 0.0.0 (23 November 2020)
 
