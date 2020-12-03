@@ -4,6 +4,15 @@
 
 Extending [Tinkerforge](https://www.tinkerforge.com/) in fun and useful ways.
 
+## Installing
+
+Tinderfridge has no dependencies outside Tinkerforge and the Ruby Standard Library.
+
+Requirements:
+
+* Tinkerforge 2.1.27 or newer.
+* Ruby 2.5 or newer.
+
 ## Resources
 
 * [Tinkerforge Gem](https://rubygems.org/gems/tinkerforge)

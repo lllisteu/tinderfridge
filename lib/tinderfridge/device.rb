@@ -23,7 +23,7 @@ module Tinkerforge
             [
               klass.const_get('DEVICE_IDENTIFIER'),
               klass,
-              File.basename(klass.const_source_location('DEVICE_IDENTIFIER').first, '.rb'),
+              File.basename(klass.instance_method('initialize').source_location.first, '.rb'),
               klass.const_get('DEVICE_DISPLAY_NAME')
             ]
           else
