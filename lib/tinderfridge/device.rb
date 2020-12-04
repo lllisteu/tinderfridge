@@ -38,6 +38,7 @@ module Tinkerforge
     #                           Instance Methods                           #
     #----------------------------------------------------------------------#
 
+    # Returns the device's IPConnection object.
     attr_reader :ipcon
 
     # Returns a programmer-friendly representation of the device.
@@ -45,7 +46,7 @@ module Tinkerforge
       "%s (%s@%s:%s)" % [self.class, @uid_string, ipcon.host, ipcon.port]
     end
 
-    # Identifies a Brick, Bricklet, or other Tinkerforge component by blinking its status led.
+    # Identifies a Tinkerforge device by blinking its status led.
     def identify(seconds=10)
       seconds = seconds.to_i
       if (respond_to? 'get_status_led_config') and (respond_to? 'set_status_led_config')
