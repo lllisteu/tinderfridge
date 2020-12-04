@@ -22,9 +22,9 @@ module Tinkerforge
           if klass.const_defined? 'DEVICE_IDENTIFIER'
             [
               klass.const_get('DEVICE_IDENTIFIER'),
+              klass.const_get('DEVICE_DISPLAY_NAME'),
               klass,
-              File.basename(klass.instance_method('initialize').source_location.first, '.rb'),
-              klass.const_get('DEVICE_DISPLAY_NAME')
+              File.basename(klass.instance_method('initialize').source_location.first, '.rb')
             ]
           else
             nil
