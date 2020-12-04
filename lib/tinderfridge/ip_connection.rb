@@ -4,7 +4,11 @@ module Tinkerforge
 
   class IPConnection
 
-    attr_reader :host, :port
+    # Returns the host for the IP Connection object.
+    attr_reader :host
+
+    # Returns the port for the IP Connection object.
+    attr_reader :port
 
     # Returns a programmer-friendly representation of the object.
     def inspect
