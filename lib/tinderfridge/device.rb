@@ -9,7 +9,8 @@ module Tinkerforge
 
     class << self
 
-      # Returns all classes that inherited from this class.
+      # Returns all currently defined classes that inherited from this class.
+      #
       # With help from:
       # - https://stackoverflow.com/questions/2393697
       def descendants
@@ -47,14 +48,18 @@ module Tinkerforge
     end
 
     # Identifies a Tinkerforge device by blinking its status led.
+    #
+    # Supports recent devices. When invoked on older devices, does nothing.
     def identify(seconds=10)
-      seconds = seconds.to_i
       if (respond_to? 'get_status_led_config') and (respond_to? 'set_status_led_config')
+        seconds = seconds.to_i
         state = get_status_led_config
+
         (seconds*2).times do |n|
           set_status_led_config n.remainder(2)
           sleep 0.5
         end
+
         set_status_led_config state
         seconds
       else
