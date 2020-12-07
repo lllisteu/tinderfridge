@@ -14,4 +14,6 @@ end
 
   device_info
 
+  device_collection
+
 ).each { |m| require "tinderfridge/#{m}" }
