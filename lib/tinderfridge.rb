@@ -12,4 +12,6 @@ end
 
   tinkerforge
 
+  device_info
+
 ).each { |m| require "tinderfridge/#{m}" }

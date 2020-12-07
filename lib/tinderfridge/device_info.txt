@@ -1,0 +1,139 @@
+11	DC Brick	Tinkerforge::BrickDC	brick_dc
+13	Master Brick	Tinkerforge::BrickMaster	brick_master
+14	Servo Brick	Tinkerforge::BrickServo	brick_servo
+15	Stepper Brick	Tinkerforge::BrickStepper	brick_stepper
+16	IMU Brick	Tinkerforge::BrickIMU	brick_imu
+17	RED Brick	Tinkerforge::BrickRED	brick_red
+18	IMU Brick 2.0	Tinkerforge::BrickIMUV2	brick_imu_v2
+19	Silent Stepper Brick	Tinkerforge::BrickSilentStepper	brick_silent_stepper
+21	Ambient Light Bricklet	Tinkerforge::BrickletAmbientLight	bricklet_ambient_light
+23	Current12 Bricklet	Tinkerforge::BrickletCurrent12	bricklet_current12
+24	Current25 Bricklet	Tinkerforge::BrickletCurrent25	bricklet_current25
+25	Distance IR Bricklet	Tinkerforge::BrickletDistanceIR	bricklet_distance_ir
+26	Dual Relay Bricklet	Tinkerforge::BrickletDualRelay	bricklet_dual_relay
+27	Humidity Bricklet	Tinkerforge::BrickletHumidity	bricklet_humidity
+28	IO-16 Bricklet	Tinkerforge::BrickletIO16	bricklet_io16
+29	IO-4 Bricklet	Tinkerforge::BrickletIO4	bricklet_io4
+111	HAT Brick	Tinkerforge::BrickHAT	brick_hat
+112	HAT Zero Brick	Tinkerforge::BrickHATZero	brick_hat_zero
+210	Joystick Bricklet	Tinkerforge::BrickletJoystick	bricklet_joystick
+211	LCD 16x2 Bricklet	Tinkerforge::BrickletLCD16x2	bricklet_lcd_16x2
+212	LCD 20x4 Bricklet	Tinkerforge::BrickletLCD20x4	bricklet_lcd_20x4
+213	Linear Poti Bricklet	Tinkerforge::BrickletLinearPoti	bricklet_linear_poti
+214	Piezo Buzzer Bricklet	Tinkerforge::BrickletPiezoBuzzer	bricklet_piezo_buzzer
+215	Rotary Poti Bricklet	Tinkerforge::BrickletRotaryPoti	bricklet_rotary_poti
+216	Temperature Bricklet	Tinkerforge::BrickletTemperature	bricklet_temperature
+217	Temperature IR Bricklet	Tinkerforge::BrickletTemperatureIR	bricklet_temperature_ir
+218	Voltage Bricklet	Tinkerforge::BrickletVoltage	bricklet_voltage
+219	Analog In Bricklet	Tinkerforge::BrickletAnalogIn	bricklet_analog_in
+220	Analog Out Bricklet	Tinkerforge::BrickletAnalogOut	bricklet_analog_out
+221	Barometer Bricklet	Tinkerforge::BrickletBarometer	bricklet_barometer
+222	GPS Bricklet	Tinkerforge::BrickletGPS	bricklet_gps
+223	Industrial Digital In 4 Bricklet	Tinkerforge::BrickletIndustrialDigitalIn4	bricklet_industrial_digital_in_4
+224	Industrial Digital Out 4 Bricklet	Tinkerforge::BrickletIndustrialDigitalOut4	bricklet_industrial_digital_out_4
+225	Industrial Quad Relay Bricklet	Tinkerforge::BrickletIndustrialQuadRelay	bricklet_industrial_quad_relay
+226	PTC Bricklet	Tinkerforge::BrickletPTC	bricklet_ptc
+227	Voltage/Current Bricklet	Tinkerforge::BrickletVoltageCurrent	bricklet_voltage_current
+228	Industrial Dual 0-20mA Bricklet	Tinkerforge::BrickletIndustrialDual020mA	bricklet_industrial_dual_0_20ma
+229	Distance US Bricklet	Tinkerforge::BrickletDistanceUS	bricklet_distance_us
+230	Dual Button Bricklet	Tinkerforge::BrickletDualButton	bricklet_dual_button
+231	LED Strip Bricklet	Tinkerforge::BrickletLEDStrip	bricklet_led_strip
+232	Moisture Bricklet	Tinkerforge::BrickletMoisture	bricklet_moisture
+233	Motion Detector Bricklet	Tinkerforge::BrickletMotionDetector	bricklet_motion_detector
+234	Multi Touch Bricklet	Tinkerforge::BrickletMultiTouch	bricklet_multi_touch
+235	Remote Switch Bricklet	Tinkerforge::BrickletRemoteSwitch	bricklet_remote_switch
+236	Rotary Encoder Bricklet	Tinkerforge::BrickletRotaryEncoder	bricklet_rotary_encoder
+237	Segment Display 4x7 Bricklet	Tinkerforge::BrickletSegmentDisplay4x7	bricklet_segment_display_4x7
+238	Sound Intensity Bricklet	Tinkerforge::BrickletSoundIntensity	bricklet_sound_intensity
+239	Tilt Bricklet	Tinkerforge::BrickletTilt	bricklet_tilt
+240	Hall Effect Bricklet	Tinkerforge::BrickletHallEffect	bricklet_hall_effect
+241	Line Bricklet	Tinkerforge::BrickletLine	bricklet_line
+242	Piezo Speaker Bricklet	Tinkerforge::BrickletPiezoSpeaker	bricklet_piezo_speaker
+243	Color Bricklet	Tinkerforge::BrickletColor	bricklet_color
+244	Solid State Relay Bricklet	Tinkerforge::BrickletSolidStateRelay	bricklet_solid_state_relay
+246	NFC/RFID Bricklet	Tinkerforge::BrickletNFCRFID	bricklet_nfc_rfid
+249	Industrial Dual Analog In Bricklet	Tinkerforge::BrickletIndustrialDualAnalogIn	bricklet_industrial_dual_analog_in
+250	Accelerometer Bricklet	Tinkerforge::BrickletAccelerometer	bricklet_accelerometer
+251	Analog In Bricklet 2.0	Tinkerforge::BrickletAnalogInV2	bricklet_analog_in_v2
+253	Load Cell Bricklet	Tinkerforge::BrickletLoadCell	bricklet_load_cell
+254	RS232 Bricklet	Tinkerforge::BrickletRS232	bricklet_rs232
+255	Laser Range Finder Bricklet	Tinkerforge::BrickletLaserRangeFinder	bricklet_laser_range_finder
+256	Analog Out Bricklet 2.0	Tinkerforge::BrickletAnalogOutV2	bricklet_analog_out_v2
+258	Industrial Analog Out Bricklet	Tinkerforge::BrickletIndustrialAnalogOut	bricklet_industrial_analog_out
+259	Ambient Light Bricklet 2.0	Tinkerforge::BrickletAmbientLightV2	bricklet_ambient_light_v2
+260	Dust Detector Bricklet	Tinkerforge::BrickletDustDetector	bricklet_dust_detector
+262	CO2 Bricklet	Tinkerforge::BrickletCO2	bricklet_co2
+263	OLED 128x64 Bricklet	Tinkerforge::BrickletOLED128x64	bricklet_oled_128x64
+264	OLED 64x48 Bricklet	Tinkerforge::BrickletOLED64x48	bricklet_oled_64x48
+265	UV Light Bricklet	Tinkerforge::BrickletUVLight	bricklet_uv_light
+266	Thermocouple Bricklet	Tinkerforge::BrickletThermocouple	bricklet_thermocouple
+267	Motorized Linear Poti Bricklet	Tinkerforge::BrickletMotorizedLinearPoti	bricklet_motorized_linear_poti
+268	Real-Time Clock Bricklet	Tinkerforge::BrickletRealTimeClock	bricklet_real_time_clock
+270	CAN Bricklet	Tinkerforge::BrickletCAN	bricklet_can
+271	RGB LED Bricklet	Tinkerforge::BrickletRGBLED	bricklet_rgb_led
+272	RGB LED Matrix Bricklet	Tinkerforge::BrickletRGBLEDMatrix	bricklet_rgb_led_matrix
+276	GPS Bricklet 2.0	Tinkerforge::BrickletGPSV2	bricklet_gps_v2
+277	RS485 Bricklet	Tinkerforge::BrickletRS485	bricklet_rs485
+278	Thermal Imaging Bricklet	Tinkerforge::BrickletThermalImaging	bricklet_thermal_imaging
+279	XMC1400 Breakout Bricklet	Tinkerforge::BrickletXMC1400Breakout	bricklet_xmc1400_breakout
+282	RGB LED Button Bricklet	Tinkerforge::BrickletRGBLEDButton	bricklet_rgb_led_button
+283	Humidity Bricklet 2.0	Tinkerforge::BrickletHumidityV2	bricklet_humidity_v2
+284	Industrial Dual Relay Bricklet	Tinkerforge::BrickletIndustrialDualRelay	bricklet_industrial_dual_relay
+285	DMX Bricklet	Tinkerforge::BrickletDMX	bricklet_dmx
+286	NFC Bricklet	Tinkerforge::BrickletNFC	bricklet_nfc
+288	Outdoor Weather Bricklet	Tinkerforge::BrickletOutdoorWeather	bricklet_outdoor_weather
+289	Remote Switch Bricklet 2.0	Tinkerforge::BrickletRemoteSwitchV2	bricklet_remote_switch_v2
+290	Sound Pressure Level Bricklet	Tinkerforge::BrickletSoundPressureLevel	bricklet_sound_pressure_level
+291	Temperature IR Bricklet 2.0	Tinkerforge::BrickletTemperatureIRV2	bricklet_temperature_ir_v2
+292	Motion Detector Bricklet 2.0	Tinkerforge::BrickletMotionDetectorV2	bricklet_motion_detector_v2
+293	Industrial Counter Bricklet	Tinkerforge::BrickletIndustrialCounter	bricklet_industrial_counter
+294	Rotary Encoder Bricklet 2.0	Tinkerforge::BrickletRotaryEncoderV2	bricklet_rotary_encoder_v2
+295	Analog In Bricklet 3.0	Tinkerforge::BrickletAnalogInV3	bricklet_analog_in_v3
+296	Solid State Relay Bricklet 2.0	Tinkerforge::BrickletSolidStateRelayV2	bricklet_solid_state_relay_v2
+297	Air Quality Bricklet	Tinkerforge::BrickletAirQuality	bricklet_air_quality
+298	LCD 128x64 Bricklet	Tinkerforge::BrickletLCD128x64	bricklet_lcd_128x64
+299	Distance US Bricklet 2.0	Tinkerforge::BrickletDistanceUSV2	bricklet_distance_us_v2
+2100	Industrial Digital In 4 Bricklet 2.0	Tinkerforge::BrickletIndustrialDigitalIn4V2	bricklet_industrial_digital_in_4_v2
+2101	PTC Bricklet 2.0	Tinkerforge::BrickletPTCV2	bricklet_ptc_v2
+2102	Industrial Quad Relay Bricklet 2.0	Tinkerforge::BrickletIndustrialQuadRelayV2	bricklet_industrial_quad_relay_v2
+2103	LED Strip Bricklet 2.0	Tinkerforge::BrickletLEDStripV2	bricklet_led_strip_v2
+2104	Load Cell Bricklet 2.0	Tinkerforge::BrickletLoadCellV2	bricklet_load_cell_v2
+2105	Voltage/Current Bricklet 2.0	Tinkerforge::BrickletVoltageCurrentV2	bricklet_voltage_current_v2
+2106	Real-Time Clock Bricklet 2.0	Tinkerforge::BrickletRealTimeClockV2	bricklet_real_time_clock_v2
+2107	CAN Bricklet 2.0	Tinkerforge::BrickletCANV2	bricklet_can_v2
+2108	RS232 Bricklet 2.0	Tinkerforge::BrickletRS232V2	bricklet_rs232_v2
+2109	Thermocouple Bricklet 2.0	Tinkerforge::BrickletThermocoupleV2	bricklet_thermocouple_v2
+2110	Particulate Matter Bricklet	Tinkerforge::BrickletParticulateMatter	bricklet_particulate_matter
+2111	IO-4 Bricklet 2.0	Tinkerforge::BrickletIO4V2	bricklet_io4_v2
+2112	OLED 128x64 Bricklet 2.0	Tinkerforge::BrickletOLED128x64V2	bricklet_oled_128x64_v2
+2113	Temperature Bricklet 2.0	Tinkerforge::BrickletTemperatureV2	bricklet_temperature_v2
+2114	IO-16 Bricklet 2.0	Tinkerforge::BrickletIO16V2	bricklet_io16_v2
+2115	Analog Out Bricklet 3.0	Tinkerforge::BrickletAnalogOutV3	bricklet_analog_out_v3
+2116	Industrial Analog Out Bricklet 2.0	Tinkerforge::BrickletIndustrialAnalogOutV2	bricklet_industrial_analog_out_v2
+2117	Barometer Bricklet 2.0	Tinkerforge::BrickletBarometerV2	bricklet_barometer_v2
+2118	UV Light Bricklet 2.0	Tinkerforge::BrickletUVLightV2	bricklet_uv_light_v2
+2119	Dual Button Bricklet 2.0	Tinkerforge::BrickletDualButtonV2	bricklet_dual_button_v2
+2120	Industrial Dual 0-20mA Bricklet 2.0	Tinkerforge::BrickletIndustrialDual020mAV2	bricklet_industrial_dual_0_20ma_v2
+2121	Industrial Dual Analog In Bricklet 2.0	Tinkerforge::BrickletIndustrialDualAnalogInV2	bricklet_industrial_dual_analog_in_v2
+2122	Isolator Bricklet	Tinkerforge::BrickletIsolator	bricklet_isolator
+2123	One Wire Bricklet	Tinkerforge::BrickletOneWire	bricklet_one_wire
+2124	Industrial Digital Out 4 Bricklet 2.0	Tinkerforge::BrickletIndustrialDigitalOut4V2	bricklet_industrial_digital_out_4_v2
+2125	Distance IR Bricklet 2.0	Tinkerforge::BrickletDistanceIRV2	bricklet_distance_ir_v2
+2127	RGB LED Bricklet 2.0	Tinkerforge::BrickletRGBLEDV2	bricklet_rgb_led_v2
+2128	Color Bricklet 2.0	Tinkerforge::BrickletColorV2	bricklet_color_v2
+2129	Multi Touch Bricklet 2.0	Tinkerforge::BrickletMultiTouchV2	bricklet_multi_touch_v2
+2130	Accelerometer Bricklet 2.0	Tinkerforge::BrickletAccelerometerV2	bricklet_accelerometer_v2
+2131	Ambient Light Bricklet 3.0	Tinkerforge::BrickletAmbientLightV3	bricklet_ambient_light_v3
+2132	Hall Effect Bricklet 2.0	Tinkerforge::BrickletHallEffectV2	bricklet_hall_effect_v2
+2137	Segment Display 4x7 Bricklet 2.0	Tinkerforge::BrickletSegmentDisplay4x7V2	bricklet_segment_display_4x7_v2
+2138	Joystick Bricklet 2.0	Tinkerforge::BrickletJoystickV2	bricklet_joystick_v2
+2139	Linear Poti Bricklet 2.0	Tinkerforge::BrickletLinearPotiV2	bricklet_linear_poti_v2
+2140	Rotary Poti Bricklet 2.0	Tinkerforge::BrickletRotaryPotiV2	bricklet_rotary_poti_v2
+2144	Laser Range Finder Bricklet 2.0	Tinkerforge::BrickletLaserRangeFinderV2	bricklet_laser_range_finder_v2
+2145	Piezo Speaker Bricklet 2.0	Tinkerforge::BrickletPiezoSpeakerV2	bricklet_piezo_speaker_v2
+2146	E-Paper 296x128 Bricklet	Tinkerforge::BrickletEPaper296x128	bricklet_e_paper_296x128
+2147	CO2 Bricklet 2.0	Tinkerforge::BrickletCO2V2	bricklet_co2_v2
+2152	Energy Monitor Bricklet	Tinkerforge::BrickletEnergyMonitor	bricklet_energy_monitor
+2153	Compass Bricklet	Tinkerforge::BrickletCompass	bricklet_compass
+2161	IMU Bricklet 3.0	Tinkerforge::BrickletIMUV3	bricklet_imu_v3
+2162	Industrial Dual AC Relay Bricklet	Tinkerforge::BrickletIndustrialDualACRelay	bricklet_industrial_dual_ac_relay
