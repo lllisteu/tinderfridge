@@ -21,7 +21,11 @@
     * A terse `#inspect` method.
     * `#ipcon` method.
     * `#identify` method.
-* Added `Tinkerforge::DeviceCollection` class.
+* New `Tinkerforge::DeviceCollection` class:
+    * `#get_chip_temperature` method.
+    * `#get_spitfp_error_count` method.
+    * `#get_status_led_config` method.
+    * `#set_status_led_config` method.
 
 ## 0.0.0 (23 November 2020)
 
