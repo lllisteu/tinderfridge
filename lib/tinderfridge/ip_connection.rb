@@ -61,9 +61,12 @@ module Tinkerforge
   #
   # If no host and port are specified, uses the TINKERFORGE_HOST and TINKERFORGE_PORT environment variables, when defined.
   # Otherwise defaults to 'localhost' and port 4223.
-  def self.connect( host = (ENV['TINKERFORGE_HOST'] || 'localhost'), port = (ENV['TINKERFORGE_PORT'] || 4223) )
+  def self.connect(host=nil, port=nil)
     ipcon = IPConnection.new
-    ipcon.connect host, port
+    ipcon.connect(
+      ( host || ENV['TINKERFORGE_HOST'] || 'localhost' ),
+      ( port || ENV['TINKERFORGE_PORT'] ||  4223       )
+    )
     ipcon
   end
 
