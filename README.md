@@ -1,10 +1,16 @@
-[GitHub](https://github.com/lllisteu/tinderfridge) • [History](History.md)
+[GitHub](https://github.com/lllisteu/tinderfridge) • [RubyGems](https://rubygems.org/gems/tinderfridge) • [Documentation](https://www.rubydoc.info/gems/tinderfridge) • [History](History.md)
 
 # Tinderfridge
 
 Extending [Tinkerforge](https://www.tinkerforge.com/) in fun and useful ways.
 
 ## Installing
+
+Tinderfridge is [available as a gem](https://rubygems.org/gems/tinderfridge). You can simply install it with:
+
+```bash
+gem install tinderfridge
+```
 
 Tinderfridge has no dependencies outside Tinkerforge and the Ruby Standard Library.
 
@@ -25,3 +31,4 @@ Tinderfridge is licensed under the same terms as the Tinkerforge Ruby bindings.
 
 See the included [LICENSE.txt](LICENSE.txt) file.
 
+-----

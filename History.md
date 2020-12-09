@@ -1,8 +1,9 @@
-[← README](README.md)
+[← README](README.md) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions)
 
 # History
 
-## Unreleased
+## 0.1.0 (9 December 2020)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.1.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.1.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.1.0)
 
 * `Tinkerforge` gains:
     * `.connect` method, with useful defaults for `host` and `port`.
