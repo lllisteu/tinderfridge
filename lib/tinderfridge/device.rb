@@ -33,6 +33,21 @@ module Tinkerforge
         end.compact.sort_by { |i| i[0] }
       end
 
+      private
+
+      # Primitive superhook:
+      # Every time a class inherits from the Device class,
+      # attempts to load an extension for that new class.
+      def inherited(klass)
+        if info = Tinkerforge.device_info(klass)
+          begin
+            require("tinderfridge/devices/#{info[2][1]}")
+          rescue LoadError
+            # No extension found for this device
+          end
+        end
+      end
+
     end
 
     #----------------------------------------------------------------------#
