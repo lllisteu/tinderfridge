@@ -6,21 +6,21 @@ module Tinkerforge
     #
     # Nil for devices that do not support the get_chip_temperature method.
     def get_chip_temperature
-      map { |k,d| [ k, d.respond_to?('get_chip_temperature' ) ? d.get_chip_temperature  : nil ] }.to_h
+      smap 'get_chip_temperature'
     end
 
     # Returns the error counts for devices in the collection.
     #
     # Nil for devices that do not support the get_spitfp_error_count method.
     def get_spitfp_error_count
-      map { |k,d| [ k, d.respond_to?('get_spitfp_error_count' ) ? d.get_spitfp_error_count  : nil ] }.to_h
+      smap 'get_spitfp_error_count'
     end
 
     # Returns the status LED configuration for devices in the collection.
     #
     # Nil for devices that do not support the get_status_led_config method.
     def get_status_led_config
-      map { |k,d| [ k, d.respond_to?('get_status_led_config') ? d.get_status_led_config : nil ] }.to_h
+      smap 'get_status_led_config'
     end
 
     # Sets the status LED configuration for devices in the collection.
@@ -39,6 +39,12 @@ module Tinkerforge
         else
           raise ArgumentError, 'Unknown state'
       end
+    end
+
+    private
+
+    def smap(m)
+      map { |k,d| [ k, d.respond_to?(m) ? d.send(m) : nil ] }.to_h
     end
 
   end
