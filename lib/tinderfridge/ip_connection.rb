@@ -33,26 +33,30 @@ module Tinkerforge
       list = Tinkerforge::DeviceCollection.new
       self.register_callback(CALLBACK_ENUMERATE) do |*args|
         case args[6]
-
-          when 0, 1  # Available or Connected
-            info = Tinkerforge.device_info args[5]
-            if info
-              require File.join('tinkerforge', info[2][1] )
-              list[args.first] = Tinkerforge.const_get( info[2][0] ).new args.first, self
-            else     # Device not in device_info
-              list[args.first] = nil
+          when 0, 1
+            unless list.key?(args[0])
+              list[args[0]] = device_instance_from_enum_data(args)
             end
-
-          when 2     # Disconnected
-            list[args.first] = nil
-
+          when 2
+            list.delete args[0]
           else
             raise "Unknown Enumeration Type: #{args[6]}"
-
         end
       end
       self.enumerate
       list
+    end
+
+    private
+
+    # Takes the args supplied by an enumeration callback, and returns a device instance.
+    def device_instance_from_enum_data(enum_data)
+      if dev_info = Tinkerforge.device_info(enum_data[5])
+        require "tinkerforge/#{dev_info[2][1]}"
+        Tinkerforge.const_get(dev_info[2][0]).new enum_data[0], self
+      else
+        raise "Unknown device type #{enum_data[5]} (#{enum_data[0]})"
+      end
     end
 
   end
