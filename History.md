@@ -4,20 +4,26 @@
 
 ## Unreleased
 
-* `BrickletGPSV2` gains:
-    * `#coordinates` method.
-    * `#time` method.
-* `BrickletLCD128x64` gains:
-    * `#backlight` and `#backlight=` methods.
-    * `#clear` method.
-* `BrickletLEDStripV2` gains:
-    * `#blackout` method.
-* `BrickletOutdoorWeather` gains:
-    * `#sensors` method.
-* `BrickletRGBLEDButton` gains:
-    * `#rgb` and `#rgb=` methods.
-* `BrickletRGBLEDV2` gains:
-    * `#rgb` and `#rgb=` methods.
+* `IPConnection` class:
+    * Improved robustness of `#discover` method.
+* `DeviceCollection` class:
+    * Added `#get_identity` method.
+    * Added `#ls` method.
+* Brick and Bricklet classes:
+    * `BrickletGPSV2` gains:
+        * `#coordinates` method.
+        * `#time` method.
+    * `BrickletLCD128x64` gains:
+        * `#backlight` and `#backlight=` methods.
+        * `#clear` method.
+    * `BrickletLEDStripV2` gains:
+        * `#blackout` method.
+    * `BrickletOutdoorWeather` gains:
+        * `#sensors` method.
+    * `BrickletRGBLEDButton` gains:
+        * `#rgb` and `#rgb=` methods.
+    * `BrickletRGBLEDV2` gains:
+        * `#rgb` and `#rgb=` methods.
 
 ## 0.1.0 (9 December 2020)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.1.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.1.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.1.0)
