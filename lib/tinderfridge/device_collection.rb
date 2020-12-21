@@ -9,6 +9,21 @@ module Tinkerforge
       smap 'get_chip_temperature'
     end
 
+    # Returns identity information for devices in the collection.
+    #
+    # Identity information is returned as an array:
+    # - 0 : UID
+    # - 1 : Connected UID
+    # - 2 : Connected port (position)
+    # - 3 : Hardware version
+    # - 4 : Firmware version
+    # - 5 : Device Identifier
+    #
+    # Nil for devices that do not support the get_identity method.
+    def get_identity
+      smap 'get_identity'
+    end
+
     # Returns the error counts for devices in the collection.
     #
     # Nil for devices that do not support the get_spitfp_error_count method.
@@ -27,7 +42,7 @@ module Tinkerforge
     #
     # Ignores devices that do not support the set_status_led_config method.
     #
-    # Argument can be an Integer (e.g. 0=off, 1=on), or a Hash (as returned by #get_status_led_config).
+    # Argument can be an integer (e.g. 0=off, 1=on), or a hash (as returned by #get_status_led_config).
     def set_status_led_config(state)
       case state
         when Integer
@@ -39,6 +54,13 @@ module Tinkerforge
         else
           raise ArgumentError, 'Unknown state'
       end
+    end
+
+    # Prints a list of devices in the collection.
+    def ls
+      keys.sort_by(&:downcase).each do |k|
+        puts "%-8s %.40s" % [k, Tinkerforge.device_info(self[k])[1]]
+      end.size
     end
 
     private
