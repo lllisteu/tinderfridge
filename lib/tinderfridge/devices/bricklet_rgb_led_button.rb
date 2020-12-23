@@ -14,6 +14,12 @@ module Tinkerforge
       set_color *rgb.flatten
     end
 
+    # Switches off the button's LED.
+    def blackout
+      self.rgb = 0, 0, 0
+      true
+    end
+
   end
 
 end
