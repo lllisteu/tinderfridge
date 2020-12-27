@@ -5,6 +5,7 @@ module Tinkerforge
     # Clears the display.
     def clear
       set_segments [false]*8, [false]*8, [false]*8, [false]*8, [false]*2, false
+      true
     end
 
     alias blackout clear
