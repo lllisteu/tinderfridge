@@ -14,6 +14,12 @@ module Tinkerforge
       set_display_configuration *state
     end
 
+    # Switches off the backlight.
+    def blackout
+      self.backlight = 0
+      true
+    end
+
     # Clears the display, including the GUI.
     def clear
       clear_display
