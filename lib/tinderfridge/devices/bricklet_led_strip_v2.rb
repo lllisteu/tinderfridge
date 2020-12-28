@@ -8,6 +8,7 @@ module Tinkerforge
     def blackout
       a = Array.new(1024,0)
       6.times { |n| set_led_values( n*1024, a ) }
+      true
     end
 
   end
