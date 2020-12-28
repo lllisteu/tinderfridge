@@ -15,9 +15,11 @@
         * `#time` method.
     * `BrickletLCD128x64` gains:
         * `#backlight` and `#backlight=` methods.
+        * `#blackout` method.
         * `#clear` method.
     * `BrickletLEDStripV2` gains:
         * `#blackout` method.
+        * `#channels` method.
     * `BrickletOutdoorWeather` gains:
         * `#sensors` method.
     * `BrickletRGBLEDButton` gains:
