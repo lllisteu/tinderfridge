@@ -11,6 +11,33 @@ module Tinkerforge
       true
     end
 
+    # Returns the channels as defined by the channel mapping.
+    def channels
+      if ch = lookup_channel_mapping(get_channel_mapping)
+        ch[1].chars
+      else
+        ch
+      end
+    end
+
+    private
+
+    def lookup_channel_mapping(selector=nil)
+      @@channel_mapping_table ||= self.class.constants.map do |c|
+        (c.to_s =~ /^CHANNEL_MAPPING_(\w{3,4})$/ ) ? [self.class.const_get(c), $1] : nil
+      end.compact.sort_by { |l| l[0] }
+      case selector
+        when NilClass
+          @@channel_mapping_table
+        when Integer
+          @@channel_mapping_table.select { |n,s| n == selector }.first
+        when String
+          @@channel_mapping_table.select { |n,s| s == selector }.first
+        else
+          raise ArgumentError, 'Unknown selector'
+      end
+    end
+
   end
 
 end
