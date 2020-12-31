@@ -54,6 +54,12 @@ module Tinkerforge
     #                           Instance Methods                           #
     #----------------------------------------------------------------------#
 
+    # Returns the device's numeric Device Identifier.
+    attr_reader :device_identifier
+
+    # Returns the device's Display Name.
+    attr_reader :device_display_name
+
     # Returns the device's IPConnection object.
     attr_reader :ipcon
 
