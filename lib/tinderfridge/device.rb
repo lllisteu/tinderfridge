@@ -54,6 +54,9 @@ module Tinkerforge
     #                           Instance Methods                           #
     #----------------------------------------------------------------------#
 
+    # Returns the device's UID. Not to be confused with #uid, which returns the numeric UID.
+    attr_reader :uid_string
+
     # Returns the device's numeric Device Identifier.
     attr_reader :device_identifier
 
