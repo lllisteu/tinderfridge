@@ -71,6 +71,23 @@ module Tinkerforge
       "%s (%s@%s:%s)" % [self.class, @uid_string, ipcon.host, ipcon.port]
     end
 
+    # Returns the device's state.
+    def state
+      [
+        [ 'uid'                , uid_string          ],
+        [ 'update_time'        , Time.now            ],
+        [ 'device_identifier'  , device_identifier   ],
+        [ 'device_display_name', device_display_name ],
+
+        [ 'ipcon' , { 'host' => ipcon.host, 'port' => ipcon.port } ],
+
+        respond_to?('get_chip_temperature'  ) ? [ 'chip_temperature'  , get_chip_temperature   ] : nil,
+        respond_to?('get_spitfp_error_count') ? [ 'spitfp_error_count', get_spitfp_error_count ] : nil,
+        respond_to?('get_status_led_config' ) ? [ 'status_led_config' , get_status_led_config  ] : nil,
+
+      ].compact.to_h
+    end
+
     # Identifies a Tinkerforge device by blinking its status led.
     #
     # Supports recent devices. When invoked on older devices, does nothing.
