@@ -75,7 +75,7 @@ module Tinkerforge
     def state
       [
         [ 'uid'                , uid_string          ],
-        [ 'update_time'        , Time.now            ],
+        [ 'update_time'        , Time.now.gmtime     ],
         [ 'device_identifier'  , device_identifier   ],
         [ 'device_display_name', device_display_name ],
 
