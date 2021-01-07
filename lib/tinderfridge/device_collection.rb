@@ -63,6 +63,11 @@ module Tinkerforge
       end.size
     end
 
+    # Returns the state of devices in the collection.
+    def state
+      { 'devices' => smap('state') }
+    end
+
     private
 
     def smap(m)
