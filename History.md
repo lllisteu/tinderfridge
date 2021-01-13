@@ -5,6 +5,8 @@
 ## Unreleased
 
 * `DeviceCollection` class:
+    * Added `#blackout` method.
+    * Added `#ipcons` method.
     * Added `#state` method.
 * All Brick and Bricklet classes gain:
     * `#device_display_name` method.
