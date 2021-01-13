@@ -68,6 +68,18 @@ module Tinkerforge
       { 'devices' => smap('state') }
     end
 
+    # Turns off light sources such as screens and RGB LEDs for devices in the collection.
+    #
+    # Ignores devices that do not support the blackout method.
+    def blackout
+      smap 'blackout'
+    end
+
+    # Returns a list of unique IP Connections used by devices in the collection.
+    def ipcons
+      smap('ipcon').values.compact.uniq
+    end
+
     private
 
     def smap(m)
