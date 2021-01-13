@@ -73,13 +73,16 @@ module Tinkerforge
 
     # Returns the device's state.
     def state
+      identity = get_identity
+
       [
         [ 'uid'                , uid_string          ],
         [ 'update_time'        , Time.now.gmtime     ],
         [ 'device_identifier'  , device_identifier   ],
         [ 'device_display_name', device_display_name ],
 
-        [ 'ipcon' , { 'host' => ipcon.host, 'port' => ipcon.port } ],
+        [ 'connected', { 'uid'  => identity[1], 'position' => identity[2] } ],
+        [ 'ipcon'    , { 'host' => ipcon.host , 'port'     => ipcon.port  } ],
 
         respond_to?('get_chip_temperature'  ) ? [ 'chip_temperature'  , get_chip_temperature   ] : nil,
         respond_to?('get_spitfp_error_count') ? [ 'spitfp_error_count', get_spitfp_error_count ] : nil,
