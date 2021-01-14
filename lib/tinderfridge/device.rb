@@ -76,10 +76,11 @@ module Tinkerforge
       identity = get_identity
 
       [
-        [ 'uid'                , uid_string          ],
-        [ 'update_time'        , Time.now.gmtime     ],
-        [ 'device_identifier'  , device_identifier   ],
-        [ 'device_display_name', device_display_name ],
+        [ 'uid'                , uid_string            ],
+        [ 'update_time'        , Time.now.gmtime       ],
+        [ 'device_identifier'  , device_identifier     ],
+        [ 'device_display_name', device_display_name   ],
+        [ 'firmware_version'   , identity[4].join('.') ],
 
         [ 'connected', { 'uid'  => identity[1], 'position' => identity[2] } ],
         [ 'ipcon'    , { 'host' => ipcon.host , 'port'     => ipcon.port  } ],
