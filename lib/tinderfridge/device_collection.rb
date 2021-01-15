@@ -65,7 +65,7 @@ module Tinkerforge
 
     # Returns the state of devices in the collection.
     def state
-      { 'devices' => smap('state') }
+      smap 'state'
     end
 
     # Turns off light sources such as screens and RGB LEDs for devices in the collection.
