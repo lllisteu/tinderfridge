@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>=2.5.0'
 
-  s.add_runtime_dependency( 'tinkerforge', '2.1.27' )
+  s.add_runtime_dependency( 'tinkerforge', '~> 2.1', '>= 2.1.27' )
 
   s.metadata = {
     'homepage_uri'      => 'https://github.com/lllisteu/tinderfridge',
