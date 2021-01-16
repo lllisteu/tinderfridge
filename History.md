@@ -13,6 +13,9 @@
     * `#device_identifier` method.
     * `#uid_string` method.
     * `#state` method.
+* Support for new Bricklets:
+    * `BrickletPerformanceDC`
+    * `BrickletServoV2`
 
 ## 0.2.0 (29 December 2020)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.2.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.2.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.2.0)
