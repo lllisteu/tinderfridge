@@ -135,5 +135,7 @@
 2147	CO2 Bricklet 2.0	Tinkerforge::BrickletCO2V2	bricklet_co2_v2
 2152	Energy Monitor Bricklet	Tinkerforge::BrickletEnergyMonitor	bricklet_energy_monitor
 2153	Compass Bricklet	Tinkerforge::BrickletCompass	bricklet_compass
+2156	Performance DC Bricklet	Tinkerforge::BrickletPerformanceDC	bricklet_performance_dc
+2157	Servo Bricklet 2.0	Tinkerforge::BrickletServoV2	bricklet_servo_v2
 2161	IMU Bricklet 3.0	Tinkerforge::BrickletIMUV3	bricklet_imu_v3
 2162	Industrial Dual AC Relay Bricklet	Tinkerforge::BrickletIndustrialDualACRelay	bricklet_industrial_dual_ac_relay
