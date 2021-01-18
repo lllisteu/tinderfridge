@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.3.0 (18 January 2021)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.3.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.3.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.3.0)
 
 * `DeviceCollection` class:
     * Added `#blackout` method.
@@ -14,8 +15,8 @@
     * `#uid_string` method.
     * `#state` method.
 * Support for new Bricklets:
-    * `BrickletPerformanceDC`
-    * `BrickletServoV2`
+    * Performance DC Bricklet
+    * Servo Bricklet 2.0
 
 ## 0.2.0 (29 December 2020)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.2.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.2.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.2.0)
