@@ -76,7 +76,8 @@ Also see the [Tinderfridge documentation](https://www.rubydoc.info/gems/tinderfr
 ## Resources
 
 * [Tinkerforge Gem](https://rubygems.org/gems/tinkerforge)
-* [RubyDoc documentation for Tinkerforge Gem](https://www.rubydoc.info/gems/tinkerforge)
+    * [RubyDoc documentation](https://www.rubydoc.info/gems/tinkerforge)
+    * [Changelog](https://github.com/Tinkerforge/generators/blob/master/ruby/changelog.txt)
 * [Tinkerforge documentation for Ruby - API bindings](https://www.tinkerforge.com/en/doc/Software/API_Bindings_Ruby.html)
 
 ## License
