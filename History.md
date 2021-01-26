@@ -2,6 +2,13 @@
 
 # History
 
+## Unreleased
+
+* Bricklet classes:
+    * `BrickletSegmentDisplay4x7V2` gains:
+        * `segments=` method.
+        * `segments_string` method.
+
 ## 0.3.0 (18 January 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.3.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.3.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.3.0)
 
