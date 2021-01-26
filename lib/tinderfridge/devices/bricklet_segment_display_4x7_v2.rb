@@ -15,6 +15,11 @@ module Tinkerforge
       send_request FUNCTION_GET_SEGMENTS, [], '', 14, '?35'
     end
 
+    # Returns the state of all 35 segments as a string of 1s and 0s.
+    def segments_string
+      segments.map { |s| s ? '1' : '0' }.join
+    end
+
     # Sets the state of all 35 segments.
     def segments=(*segments)
       segs = segments.flatten
