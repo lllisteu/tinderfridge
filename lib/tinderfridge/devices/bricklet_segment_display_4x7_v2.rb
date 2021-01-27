@@ -35,6 +35,11 @@ module Tinkerforge
       self.segments = segments.gsub(/[ _]/, '').ljust(35, '0').chars.map { |s| s == '1' }
     end
 
+    # Returns the device's state.
+    def state
+      super.merge( 'brightness' => get_brightness )
+    end
+
   end
 
 end
