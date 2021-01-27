@@ -5,9 +5,13 @@
 ## Unreleased
 
 * Bricklet classes:
-    * `BrickletSegmentDisplay4x7V2` gains:
-        * `segments=` method.
-        * `segments_string` method.
+    * `BrickletLEDStripV2`:
+        * `#state` includes chip type, channel mapping, channels, frame duration, clock frequency, and supply voltage.
+    * `BrickletSegmentDisplay4x7V2`:
+        * Added `segments=` method.
+        * Added `segments_string` method.
+        * Added `segments_string=` method.
+        * `#state` includes current brightness.
 
 ## 0.3.0 (18 January 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.3.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.3.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.3.0)
