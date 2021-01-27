@@ -20,6 +20,18 @@ module Tinkerforge
       end
     end
 
+    # Returns the device's state.
+    def state
+      super.merge(
+        'chip_type'       => get_chip_type,
+        'channel_mapping' => get_channel_mapping,
+        'channels'        => channels,
+        'frame_duration'  => get_frame_duration,
+        'clock_frequency' => get_clock_frequency,
+        'supply_voltage'  => get_supply_voltage/1000.0,
+      )
+    end
+
     private
 
     def lookup_channel_mapping(selector=nil)
