@@ -4,9 +4,16 @@
 
 ## Unreleased
 
+* Brick classes:
+    * `BrickHAT`:
+        * `#state` includes bricklet power, USB voltage, DC voltage, and sleep mode.
 * Bricklet classes:
     * `BrickletLEDStripV2`:
         * `#state` includes chip type, channel mapping, channels, frame duration, clock frequency, and supply voltage.
+    * `BrickletMultiTouchV2`:
+        * `#state` includes electrode config and -sensitivity, and touch LED config.
+    * `BrickletNFC`:
+        * `#state` includes mode, detection LED config, and maximum timeout.
     * `BrickletSegmentDisplay4x7V2`:
         * Added `segments=` method.
         * Added `segments_string` method.
