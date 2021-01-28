@@ -28,7 +28,7 @@ module Tinkerforge
         'channels'        => channels,
         'frame_duration'  => get_frame_duration,
         'clock_frequency' => get_clock_frequency,
-        'supply_voltage'  => get_supply_voltage/1000.0,
+        'supply_voltage'  => get_supply_voltage,
       )
     end
 
