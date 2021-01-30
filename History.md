@@ -6,8 +6,14 @@
 
 * Brick classes:
     * `BrickHAT`:
-        * `#state` includes bricklet power, USB voltage, DC voltage, and sleep mode.
+        * `#state` includes bricklet power, USB voltage, DC voltage, and sleep mode settings.
+    * `BrickHATZero`:
+        * `#state` includes USB voltage.
 * Bricklet classes:
+    * `BrickletDMX`:
+        * `#state` includes DMX mode, frame duration, frame error count, communication LED config, and error LED config.
+    * `BrickletIndustrialDualRelay`:
+        * `#state` includes value, connected output, and monoflop state per relay.
     * `BrickletLEDStripV2`:
         * `#state` includes chip type, channel mapping, channels, frame duration, clock frequency, and supply voltage.
     * `BrickletMultiTouchV2`:
