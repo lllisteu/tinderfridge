@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+* `IPConnection` class:
+    * `#discover` takes an optional argument for number of seconds to wait.
 * Brick classes:
     * `BrickHAT`:
         * `#state` includes bricklet power, USB voltage, DC voltage, and sleep mode settings.
