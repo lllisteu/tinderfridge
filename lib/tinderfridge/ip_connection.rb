@@ -15,22 +15,24 @@ module Tinkerforge
       "%s (%s:%s)" % [self.class, host, port]
     end
 
-    # Returns a Tinkerforge::DeviceCollection with devices discovered for this IP Connection.
+    # Returns a Tinkerforge::DeviceCollection with devices discovered for this IP Connection. Discovery may take a few moments.
     #
-    # Discovery may take a few seconds, but will return a Tinkerforge::DeviceCollection immediately.
+    # Accepts an optional argument for the number of seconds to wait, otherwise returns immediately.
     #
-    # It is therefore a good idea to store the result in a variable.
-    # This variable will be filled with devices as they are found. See examples.
-    #
+    # A good idea is to store the result in a variable, which will then be filled with devices as they are found.
     # @example Using Tinkerforge.connect
     #  my_devices = Tinkerforge.connect.discover
+    #
+    # @example Wait 1 second
+    #  Tinkerforge.connect.discover(1).ls
     #
     # @example Classic
     #  ipcon = Tinkerforge::IPConnection.new
     #  ipcon.connect 'localhost', 4223
     #  my_devices = ipcon.discover
-    def discover
+    def discover(seconds=nil)
       list = Tinkerforge::DeviceCollection.new
+
       self.register_callback(CALLBACK_ENUMERATE) do |*args|
         case args[6]
           when 0, 1
@@ -43,7 +45,9 @@ module Tinkerforge
             raise "Unknown Enumeration Type: #{args[6]}"
         end
       end
+
       self.enumerate
+      sleep(seconds.to_f) if seconds
       list
     end
 
