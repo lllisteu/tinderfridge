@@ -40,6 +40,24 @@ module Tinkerforge
       super.merge( 'brightness' => get_brightness )
     end
 
+    # Returns the definition of glyphs for Unicode chracters.
+    def glyphs
+      @@glyphs ||= {
+
+        '0' => '1111110',
+        '1' => '0110000',
+        '2' => '1101101',
+        '3' => '1111001',
+        '4' => '0110011',
+        '5' => '1011011',
+        '6' => '1011111',
+        '7' => '1110000',
+        '8' => '1111111',
+        '9' => '1111011',
+
+      }
+    end
+
   end
 
 end
