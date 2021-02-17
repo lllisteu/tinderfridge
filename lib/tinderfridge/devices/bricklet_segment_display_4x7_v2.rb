@@ -40,6 +40,27 @@ module Tinkerforge
       super.merge( 'brightness' => get_brightness )
     end
 
+    # Displays a string.
+    def print(text='')
+      out   = ''
+      colon = false
+
+      text.to_s.chars.each do |c|
+        if glyphs.key? c
+          out << glyphs[c] << '0'
+        elsif c == '.' and out.size > 0
+          out[-1] = '1'
+        elsif c == ':' and out.size == 16
+          colon = true
+        else
+          raise "Can not display '#{text}'"
+        end
+      end
+
+      self.segments_string = out[0,32].ljust(32,'0') + ( colon ? '110' : '000' )
+      nil
+    end
+
     # Returns the definition of glyphs for Unicode chracters.
     def glyphs
       @@glyphs ||= {
