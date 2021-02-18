@@ -48,7 +48,7 @@ module Tinkerforge
       text.to_s.chars.each do |c|
         if glyphs.key? c
           out << glyphs[c] << '0'
-        elsif c == '.' and out.size > 0
+        elsif c == '.' and out[-1] == '0'
           out[-1] = '1'
         elsif c == ':' and out.size == 16
           colon = true
