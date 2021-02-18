@@ -23,9 +23,11 @@
     * `BrickletNFC`:
         * `#state` includes mode, detection LED config, and maximum timeout.
     * `BrickletSegmentDisplay4x7V2`:
-        * Added `segments=` method.
-        * Added `segments_string` method.
-        * Added `segments_string=` method.
+        * Added `#print` method.
+        * Added `#glyphs` method.
+        * Added `#segments=` method.
+        * Added `#segments_string` method.
+        * Added `#segments_string=` method.
         * `#state` includes current brightness.
 
 ## 0.3.0 (18 January 2021)
