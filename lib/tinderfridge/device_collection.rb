@@ -80,6 +80,42 @@ module Tinkerforge
       smap('ipcon').values.compact.uniq
     end
 
+    # Returns an array of devices in the collection matching the selector.
+    #
+    # Selector argument can be:
+    # - Device Identifier
+    # - Class name or Device Display Name (Regexp)
+    # Selection by regular expression is case-insensitive by default.
+    #
+    # @example Select by class name and Device Display Name
+    #  # All 'analog' devices
+    #  tf = Tinkerforge.connect.discover(1)
+    #  tf.find_all /analog/
+    def find_all(selector)
+      case selector
+        when Integer
+          values.select { |v| v.device_identifier == selector}
+        when Regexp
+          r = Regexp.new selector.source, Regexp::IGNORECASE
+          values.select { |v| v.class.to_s.split('::').last =~ r || v.device_display_name =~ r }
+      end
+    end
+
+    # Returns the first device in the collection matching the selector.
+    #
+    # Selector argument can be:
+    # - Device Identifier
+    # - Class name or Device Display Name (Regexp)
+    # Selection by regular expression is case-insensitive by default.
+    #
+    # @example Select by Device Identifier
+    #  # Remote Switch Bricklet 2.0
+    #  tf = Tinkerforge.connect('my_host.local').discover(1)
+    #  tf.find 289
+    def find(selector)
+      find_all(selector).first
+    end
+
     private
 
     def smap(m)
