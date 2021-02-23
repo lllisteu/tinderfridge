@@ -110,7 +110,7 @@ module Tinkerforge
     #
     # @example Select by Device Identifier
     #  # Remote Switch Bricklet 2.0
-    #  tf = Tinkerforge.connect('my_host.local').discover(1)
+    #  tf = Tinkerforge.connect('myhost.local').discover(1)
     #  tf.find 289
     def find(selector)
       find_all(selector).first
