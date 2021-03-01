@@ -6,11 +6,11 @@ module Tinkerforge
 
     # Returns the device's state.
     def state
-      conf = get_configuration
-
       super.merge(
+        'configuration'    => conf = get_configuration,
         'illuminance_max'  => ILLUMINANCE_RANGE[ conf[0] ],
         'integration_time' => 50 + conf[1] * 50,
+        'illuminance_raw'  => get_illuminance,
       )
     end
 
