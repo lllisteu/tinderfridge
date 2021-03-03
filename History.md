@@ -10,8 +10,16 @@
 * Bricklet classes:
     * `BrickletAmbientLightV3`:
         * `#state` includes configuration, illuminance range maximum, integration time, and illuminance reading.
+    * `BrickletMotorizedLinearPoti`:
+        * Added `#position` method.
+        * Added `#position=` method and `#move_to` alias.
+        * Added `#lock` method and `#hold` alias.
+        * Added `#release` method.
+        * `#state` includes position and motor position.
     * `BrickletRemoteSwitchV2`:
         * `#state` includes remote configuration and repeats.
+    * `BrickletRGBLEDButton`:
+        * `#state` includes color calibration and color RGB.
 
 ## 0.4.0 (20 February 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.4.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.4.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.4.0)
