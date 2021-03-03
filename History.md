@@ -20,6 +20,8 @@
         * `#state` includes remote configuration and repeats.
     * `BrickletRGBLEDButton`:
         * `#state` includes color calibration and color RGB.
+    * `BrickletRGBLEDV2`:
+        * `#state` includes color RGB.
 
 ## 0.4.0 (20 February 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.4.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.4.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.4.0)
