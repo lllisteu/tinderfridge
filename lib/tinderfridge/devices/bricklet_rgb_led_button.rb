@@ -20,6 +20,14 @@ module Tinkerforge
       true
     end
 
+    # Returns the device's state.
+    def state
+      super.merge(
+        'color_calibration' => get_color_calibration,
+        'color_rgb'         => get_color,
+      )
+    end
+
   end
 
 end
