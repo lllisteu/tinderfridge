@@ -15,9 +15,9 @@ module Tinkerforge
       "%s (%s:%s)" % [self.class, host, port]
     end
 
-    # Returns true if using a local connection, false if connected via the network.
-    def local?
-      @local ||= %w(localhost 127.0.0.1 ::1).include? host
+    # Returns true if connected to localhost, false if connected via the network.
+    def localhost?
+      @localhost ||= %w(localhost 127.0.0.1 ::1).include? host
     end
 
     # Returns a Tinkerforge::DeviceCollection with devices discovered for this IP Connection. Discovery may take a few moments.

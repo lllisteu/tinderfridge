@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+* `IPConnection` class:
+    * Added `#localhost?` method.
 * `DeviceCollection` class:
     * Added `#find` method.
     * Added `#find_all` method.
