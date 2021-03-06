@@ -10,6 +10,8 @@
     * Added `#find` method.
     * Added `#find_all` method.
 * Bricklet classes:
+    * `BrickletAirQuality`:
+        * `#state` includes air quality index and -accuracy, temperature, temperature offset, humidity, and air pressure.
     * `BrickletAmbientLightV3`:
         * `#state` includes configuration, illuminance range maximum, integration time, and illuminance reading.
     * `BrickletMotorizedLinearPoti`:
