@@ -75,10 +75,12 @@ Also see the [Tinderfridge documentation](https://www.rubydoc.info/gems/tinderfr
 
 ## Resources
 
-* [Tinkerforge Gem](https://rubygems.org/gems/tinkerforge)
-    * [RubyDoc documentation](https://www.rubydoc.info/gems/tinkerforge)
-    * [Changelog](https://github.com/Tinkerforge/generators/blob/master/ruby/changelog.txt)
-* [Tinkerforge documentation for Ruby - API bindings](https://www.tinkerforge.com/en/doc/Software/API_Bindings_Ruby.html)
+* Tinkerforge Ruby bindings
+    * [Source on Github](https://github.com/Tinkerforge/generators/tree/master/ruby)
+        * [Changelog](https://github.com/Tinkerforge/generators/blob/master/ruby/changelog.txt)
+    * [Gem](https://rubygems.org/gems/tinkerforge)
+        * [RubyDoc documentation](https://www.rubydoc.info/gems/tinkerforge)
+    * [Tinkerforge documentation for Ruby - API bindings](https://www.tinkerforge.com/en/doc/Software/API_Bindings_Ruby.html)
 
 ## License
 
