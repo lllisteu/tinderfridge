@@ -66,6 +66,16 @@ module Tinkerforge
     # Returns the device's IPConnection object.
     attr_reader :ipcon
 
+    # Returns device information.
+    #
+    # Device information is an array:
+    # - 0 : Device Identifier
+    # - 1 : Device Display Name
+    # - 2 : Associated class name and source file
+    def device_info
+      Tinkerforge.device_info device_identifier
+    end
+
     # Returns a programmer-friendly representation of the device.
     def inspect
       "%s (%s@%s:%s)" % [self.class, @uid_string, ipcon.host, ipcon.port]
