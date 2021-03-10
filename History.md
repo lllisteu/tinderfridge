@@ -9,6 +9,8 @@
 * `DeviceCollection` class:
     * Added `#find` method.
     * Added `#find_all` method.
+* All Brick and Bricklet classes gain:
+    * `#device_info` method.
 * Bricklet classes:
     * `BrickletAirQuality`:
         * `#state` includes air quality index and -accuracy, temperature, temperature offset, humidity, and air pressure.
