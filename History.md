@@ -16,6 +16,8 @@
         * `#state` includes air quality index and -accuracy, temperature, temperature offset, humidity, and air pressure.
     * `BrickletAmbientLightV3`:
         * `#state` includes configuration, illuminance range maximum, integration time, and illuminance reading.
+    * `BrickletJoystickV2`:
+        * `#state` includes position and button pressed state.
     * `BrickletMotorizedLinearPoti`:
         * Added `#position` method.
         * Added `#position=` method and `#move_to` alias.
