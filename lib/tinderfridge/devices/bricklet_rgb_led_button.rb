@@ -23,8 +23,9 @@ module Tinkerforge
     # Returns the device's state.
     def state
       super.merge(
-        'color_calibration' => get_color_calibration,
         'color_rgb'         => get_color,
+        'color_calibration' => get_color_calibration,
+        'pressed'           => ( get_button_state == 0 ) ? true : false,
       )
     end
 
