@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.5.0 (12 March 2021)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.5.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.5.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.5.0)
 
 * `IPConnection` class:
     * Added `#localhost?` method.
