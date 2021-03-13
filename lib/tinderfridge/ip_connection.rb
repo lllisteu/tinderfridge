@@ -20,6 +20,19 @@ module Tinkerforge
       @localhost ||= %w(localhost 127.0.0.1 ::1).include? host
     end
 
+    # Returns the size (in bytes) of the Brick Daemon log file, if connected to localhost. Nil if connected via the network.
+    def log_size
+      if local_log_path
+        if File.exist? local_log_path
+          File.size local_log_path
+        else
+          0
+        end
+      else
+        nil
+      end
+    end
+
     # Returns a Tinkerforge::DeviceCollection with devices discovered for this IP Connection. Discovery may take a few moments.
     #
     # Accepts an optional argument for the number of seconds to wait, otherwise returns immediately.
@@ -57,6 +70,20 @@ module Tinkerforge
     end
 
     private
+
+    # The path for the Brick Daemon log file, if connected to Brickd on the same computer.
+    def local_log_path
+      @local_log_path ||=
+        if localhost?
+          if Gem.win_platform?
+            'C:\ProgramData\Tinkerforge\Brickd\brickd.log'
+          else
+            '/var/log/brickd.log'
+          end
+        else
+          nil
+        end
+    end
 
     # Takes the args supplied by an enumeration callback, and returns a device instance.
     def device_instance_from_enum_data(enum_data)
