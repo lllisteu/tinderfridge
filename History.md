@@ -4,6 +4,9 @@
 
 ## Unreleased
 
+* `IPConnection` class:
+    * Added `#log_size` method.
+    * `#discover` no longer raises an exception when encountering an unknown Device Identifier. It now produces a warning, ignores the unknown device, and continues.
 * Bricklet classes:
     * `BrickletVoltageCurrentV2`:
         * `#state` includes voltage, current, power, configuration, and calibration.
