@@ -55,7 +55,9 @@ module Tinkerforge
         case args[6]
           when 0, 1
             unless list.key?(args[0])
-              list[args[0]] = device_instance_from_enum_data(args)
+              if dev = device_instance_from_enum_data(args)
+                list[args[0]] = dev
+              end
             end
           when 2
             list.delete args[0]
@@ -91,7 +93,8 @@ module Tinkerforge
         require "tinkerforge/#{dev_info[2][1]}"
         Tinkerforge.const_get(dev_info[2][0]).new enum_data[0], self
       else
-        raise "Unknown device type #{enum_data[5]} (#{enum_data[0]})"
+        warn "Unknown Device Identifier: #{enum_data[5]} (UID: #{enum_data[0]})"
+        nil
       end
     end
 
