@@ -41,7 +41,7 @@ module Tinkerforge
       def inherited(klass)
         if info = Tinkerforge.device_info(klass)
           begin
-            require("tinderfridge/devices/#{info[2][1]}")
+            require("tinderfridge/devices/#{info[2][1]}/#{info[2][1]}")
           rescue LoadError
             # No extension found for this device
           end
