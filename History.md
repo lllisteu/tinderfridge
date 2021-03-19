@@ -10,6 +10,7 @@
 * Bricklet classes:
     * `BrickletColorV2`:
         * Added `#blackout` method.
+        * `#state` includes configuration, gain, integration time, color RGBC, illuminance reading, illuminance (lux), color temperature, saturated flag, and status of the white LED.
     * `BrickletVoltageCurrentV2`:
         * `#state` includes voltage, current, power, configuration, and calibration.
 
