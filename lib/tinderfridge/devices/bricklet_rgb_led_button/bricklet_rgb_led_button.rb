@@ -25,7 +25,7 @@ module Tinkerforge
       super.merge(
         'color_rgb'         => get_color,
         'color_calibration' => get_color_calibration,
-        'pressed'           => ( get_button_state == 0 ) ? true : false,
+        'pressed'           => get_button_state == 0,
       )
     end
 
