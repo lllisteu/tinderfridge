@@ -63,6 +63,13 @@ module Tinkerforge
       end.size
     end
 
+    # Returns the properties of devices in the collection.
+    def properties
+      smap 'properties'
+    end
+
+    alias props properties
+
     # Returns the state of devices in the collection.
     def state
       smap 'state'

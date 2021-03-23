@@ -1,6 +1,7 @@
 require 'tinkerforge/ip_connection'
 
 module Tinkerforge
+
   class Device
 
     #----------------------------------------------------------------------#
@@ -81,6 +82,16 @@ module Tinkerforge
       "%s (%s@%s:%s)" % [self.class, @uid_string, ipcon.host, ipcon.port]
     end
 
+    # Returns the device's properties.
+    def properties
+      @properties ||= {
+        'device_identifier'   => device_identifier,
+        'device_display_name' => device_display_name,
+      }.merge load_properties
+    end
+
+    alias props properties
+
     # Returns the device's state.
     def state
       identity = get_identity
@@ -88,8 +99,6 @@ module Tinkerforge
       [
         [ 'uid'                , uid_string            ],
         [ 'update_time'        , Time.now.gmtime       ],
-        [ 'device_identifier'  , device_identifier     ],
-        [ 'device_display_name', device_display_name   ],
         [ 'firmware_version'   , identity[4].join('.') ],
 
         [ 'connected', { 'uid'  => identity[1], 'position' => identity[2] } ],
@@ -122,5 +131,32 @@ module Tinkerforge
       end
     end
 
+    private
+
+    def load_properties
+      if device_info
+        properties_file = File.join(
+          File.dirname(__FILE__),
+          'devices',
+          device_info[2][1],
+          device_info[2][1],
+        ) + '.json'
+
+        if File.readable? properties_file
+          begin
+            require 'json'
+            JSON.load File.read properties_file
+          rescue
+            {}
+          end
+        else
+          {}
+        end
+      else
+        {}
+      end
+    end
+
   end
+
 end
