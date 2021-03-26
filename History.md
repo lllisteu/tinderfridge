@@ -16,6 +16,8 @@
     * `BrickletColorV2`:
         * Added `#blackout` method.
         * `#state` includes configuration, gain, integration time, color RGBC, illuminance reading, illuminance (lux), color temperature, saturated flag, and status of the white LED.
+    * `BrickletIsolator`:
+        * `#state` includes statistics, spitfp baudrate configuration, spitfp baudrate, and isolator spitfp error count.
     * `BrickletMotionDetectorV2`:
         * Added `#blackout` method.
         * `#state` includes motion detected flag, sensitivity, and brightness of indicator lights (backlight).
