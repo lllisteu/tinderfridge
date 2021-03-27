@@ -75,6 +75,15 @@ module Tinkerforge
       smap 'state'
     end
 
+    # Opens the online documentation for the devices in the collection (Mac OS only).
+    #
+    # When the URL for a device's documentation is not known, does nothing.
+    def open_documentation
+      smap 'open_documentation'
+    end
+
+    alias doc open_documentation
+
     # Turns off light sources such as screens and RGB LEDs for devices in the collection.
     #
     # Ignores devices that do not support the blackout method.

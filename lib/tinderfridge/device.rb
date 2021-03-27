@@ -111,6 +111,20 @@ module Tinkerforge
       ].compact.to_h
     end
 
+    # Opens the online documentation for the device (Mac OS only).
+    #
+    # When the URL for the documentation is not known, does nothing.
+    def open_documentation
+      if properties['documentation_en_url'] and ( RUBY_PLATFORM =~ /darwin/ )
+        `open #{properties['documentation_en_url']}`
+        properties['documentation_en_url']
+      else
+        nil
+      end
+    end
+
+    alias doc open_documentation
+
     # Identifies a Tinkerforge device by blinking its status led.
     #
     # Supports recent devices. When invoked on older devices, does nothing.
