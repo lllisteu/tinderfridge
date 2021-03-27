@@ -9,9 +9,11 @@
     * `#discover` no longer raises an exception when encountering a device with an unknown Device Identifier. It now produces a warning, ignores the unknown device, and continues.
 * `DeviceCollection` class:
     * Added `#properties` method and `#props` alias.
+    * Added `#open_documentation` method and `#doc` alias.
 * All Brick and Bricklet classes:
     * Added `#properties` method and `#props` alias.
     * Removed Device Identifier and Device Display Name from `#state`. Both were added to `#properties`.
+    * Added `#open_documentation` method and `#doc` alias.
 * Bricklet classes:
     * `BrickletColorV2`:
         * Added `#blackout` method.
