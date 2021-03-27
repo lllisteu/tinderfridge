@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricks/HAT_Zero_Brick.html"
+  "dimensions": [
+    65,
+    30,
+    5
+  ],
+  "weight": 12,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricks/HAT_Zero_Brick.html",
+  "versions_identifier": "bricklets:hat_zero"
 }
