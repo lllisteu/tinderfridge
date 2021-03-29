@@ -4,15 +4,27 @@ module Tinkerforge
 
   class IPConnection
 
-    # Returns the host for the IP Connection object.
+    # Returns the host for the IP Connection.
     attr_reader :host
 
-    # Returns the port for the IP Connection object.
+    # Returns the port for the IP Connection.
     attr_reader :port
 
     # Returns a programmer-friendly representation of the object.
     def inspect
       "%s (%s:%s)" % [self.class, host, port]
+    end
+
+    # Returns the state of the IP Connection.
+    def state
+      {
+        'host'             => host,
+        'port'             => port,
+        'connection_state' => get_connection_state,
+        'auto_reconnect'   => get_auto_reconnect,
+        'timeout'          => get_timeout,
+        'log_size'         => log_size,
+      }
     end
 
     # Returns true if connected to localhost, false if connected via the network.

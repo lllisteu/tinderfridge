@@ -6,6 +6,7 @@
 
 * `IPConnection` class:
     * Added `#log_size` method.
+    * Added `#state` method.
     * `#discover` no longer raises an exception when encountering a device with an unknown Device Identifier. It now produces a warning, ignores the unknown device, and continues.
 * `DeviceCollection` class:
     * Added `#properties` method and `#props` alias.
