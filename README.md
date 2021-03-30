@@ -75,7 +75,7 @@ Also see the [Tinderfridge documentation](https://www.rubydoc.info/gems/tinderfr
 
 ## Resources
 
-* Tinkerforge Ruby bindings
+* Tinkerforge Ruby bindings:
     * [Source on Github](https://github.com/Tinkerforge/generators/tree/master/ruby)
         * [Changelog](https://github.com/Tinkerforge/generators/blob/master/ruby/changelog.txt)
     * [Gem](https://rubygems.org/gems/tinkerforge)
