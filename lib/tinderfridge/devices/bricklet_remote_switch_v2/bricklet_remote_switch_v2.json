@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Remote_Switch_V2.html"
+  "dimensions": [
+    25,
+    40,
+    5
+  ],
+  "weight": 8,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Remote_Switch_V2.html",
+  "versions_identifier": "bricklets:remote_switch_v2"
 }
