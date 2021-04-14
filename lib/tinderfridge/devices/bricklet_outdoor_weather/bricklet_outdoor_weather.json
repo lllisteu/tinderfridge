@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Outdoor_Weather.html"
+  "dimensions": [
+    40,
+    35,
+    5
+  ],
+  "weight": 10,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Outdoor_Weather.html",
+  "versions_identifier": "bricklets:outdoor_weather"
 }
