@@ -20,9 +20,11 @@ module Tinkerforge
       {
         'host'             => host,
         'port'             => port,
+        'update_time'      => Time.now.gmtime,
         'connection_state' => get_connection_state,
         'auto_reconnect'   => get_auto_reconnect,
         'timeout'          => get_timeout,
+        'log_path'         => log_path,
         'log_size'         => log_size,
       }
     end
