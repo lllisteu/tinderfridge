@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Servo_V2.html"
+  "dimensions": [
+    40,
+    40,
+    10
+  ],
+  "weight": 9,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Servo_V2.html",
+  "versions_identifier": "bricklets:servo_v2"
 }
