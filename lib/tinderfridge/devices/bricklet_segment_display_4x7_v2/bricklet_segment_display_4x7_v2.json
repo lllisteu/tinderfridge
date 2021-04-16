@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Segment_Display_4x7_V2.html"
+  "dimensions": [
+    25,
+    65,
+    9
+  ],
+  "weight": 11,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Segment_Display_4x7_V2.html",
+  "versions_identifier": "bricklets:segment_display_4x7_v2"
 }
