@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Ambient_Light_V3.html"
+  "dimensions": [
+    25,
+    15,
+    5
+  ],
+  "weight": 2,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Ambient_Light_V3.html",
+  "versions_identifier": "bricklets:ambient_light_v3"
 }
