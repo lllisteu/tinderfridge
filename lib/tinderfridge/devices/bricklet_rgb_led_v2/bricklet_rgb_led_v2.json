@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/RGB_LED_V2.html"
+  "dimensions": [
+    25,
+    20,
+    5
+  ],
+  "weight": 3,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/RGB_LED_V2.html",
+  "versions_identifier": "bricklets:rgb_led_v2"
 }
