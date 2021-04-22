@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/GPS_V2.html"
+  "dimensions": [
+    40,
+    35,
+    12
+  ],
+  "weight": 20,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/GPS_V2.html",
+  "versions_identifier": "bricklets:gps_v2"
 }
