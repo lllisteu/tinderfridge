@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Joystick_V2.html"
+  "dimensions": [
+    25,
+    45,
+    23
+  ],
+  "weight": 15,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Joystick_V2.html",
+  "versions_identifier": "bricklets:joystick_v2"
 }
