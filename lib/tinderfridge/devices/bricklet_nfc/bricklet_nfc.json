@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/NFC.html"
+  "dimensions": [
+    85,
+    50,
+    7
+  ],
+  "weight": 18,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/NFC.html",
+  "versions_identifier": "bricklets:nfc"
 }
