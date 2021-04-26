@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Performance_DC.html"
+  "dimensions": [
+    80,
+    80,
+    22
+  ],
+  "weight": 50,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Performance_DC.html",
+  "versions_identifier": "bricklets:performance_dc"
 }
