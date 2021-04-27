@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Motorized_Linear_Poti.html"
+  "dimensions": [
+    145,
+    20,
+    28
+  ],
+  "weight": 67,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Motorized_Linear_Poti.html",
+  "versions_identifier": "bricklets:motorized_linear_poti"
 }

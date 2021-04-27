@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Motion_Detector_V2.html"
+  "dimensions": [
+    25,
+    45,
+    30
+  ],
+  "weight": 6,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Motion_Detector_V2.html",
+  "versions_identifier": "bricklets:motion_detector_v2"
 }
