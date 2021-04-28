@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    50,
+    45,
+    15
+  ],
+  "weight": 12,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/XMC1400_Breakout.html",
+  "versions_identifier": "bricklets:xmc1400_breakout"
+}
