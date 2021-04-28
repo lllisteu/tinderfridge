@@ -8,6 +8,7 @@
     * `#state` includes update time and log_path.
 * Bricklet classes:
     * Added properties for various Bricklets.
+* Fixed: calling `#state` on a `BrickDaemon` instance no longer raises an exception.
 
 ## 0.6.0 (2 April 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.6.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.6.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.6.0)

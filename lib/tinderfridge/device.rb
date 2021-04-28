@@ -94,6 +94,10 @@ module Tinkerforge
 
     # Returns the device's state.
     def state
+
+      # BrickDaemon inherits from Device, but has no #get_identity.
+      return {} unless respond_to? 'get_identity'
+
       identity = get_identity
 
       [
