@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    35,
+    35,
+    20
+  ],
+  "weight": 9,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Distance_US_V2.html",
+  "versions_identifier": "bricklets:distance_us_v2"
+}

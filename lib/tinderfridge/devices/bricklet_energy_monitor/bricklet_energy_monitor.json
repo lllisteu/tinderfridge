@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    40,
+    40,
+    5
+  ],
+  "weight": 7,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Energy_Monitor.html",
+  "versions_identifier": "bricklets:energy_monitor"
+}
