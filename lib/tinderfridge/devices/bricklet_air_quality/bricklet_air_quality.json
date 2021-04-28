@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Air_Quality.html"
+  "dimensions": [
+    25,
+    20,
+    5
+  ],
+  "weight": 2.1,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Air_Quality.html",
+  "versions_identifier": "bricklets:air_quality"
 }

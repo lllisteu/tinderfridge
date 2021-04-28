@@ -1,3 +1,10 @@
 {
-  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Isolator.html"
+  "dimensions": [
+    30,
+    40,
+    15
+  ],
+  "weight": 7.1,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Isolator.html",
+  "versions_identifier": "bricklets:isolator"
 }
