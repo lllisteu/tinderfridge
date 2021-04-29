@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    49,
+    36,
+    45
+  ],
+  "weight": 30,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Laser_Range_Finder_V2.html",
+  "versions_identifier": "bricklets:laser_range_finder_v2"
+}

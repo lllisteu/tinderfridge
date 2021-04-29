@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    35,
+    40,
+    18
+  ],
+  "weight": 9,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/CO2_V2.html",
+  "versions_identifier": "bricklets:co2_v2"
+}

@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    25,
+    15,
+    5
+  ],
+  "weight": 2,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Hall_Effect_V2.html",
+  "versions_identifier": "bricklets:hall_effect_v2"
+}
