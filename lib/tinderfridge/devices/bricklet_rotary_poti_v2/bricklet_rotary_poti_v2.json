@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    30,
+    25,
+    23
+  ],
+  "weight": 7,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Rotary_Poti_V2.html",
+  "versions_identifier": "bricklets:rotary_poti_v2"
+}

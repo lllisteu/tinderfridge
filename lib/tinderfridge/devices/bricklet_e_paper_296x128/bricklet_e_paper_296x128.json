@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    100,
+    40,
+    6
+  ],
+  "weight": 20,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/EPaper_296x128.html",
+  "versions_identifier": "bricklets:e_paper_296x128"
+}
