@@ -8,6 +8,10 @@
     * `#state` includes update time and log_path.
 * Bricklet classes:
     * Added properties for various Bricklets.
+* Support for new Bricklets:
+    * DC Bricklet 2.0
+    * Industrial PTC Bricklet
+    * Silent Stepper Bricklet 2.0
 * Fixed: calling `#state` on a `BrickDaemon` instance no longer raises an exception.
 
 ## 0.6.0 (2 April 2021)
