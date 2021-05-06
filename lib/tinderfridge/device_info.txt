@@ -139,3 +139,6 @@
 2157	Servo Bricklet 2.0	Tinkerforge::BrickletServoV2	bricklet_servo_v2
 2161	IMU Bricklet 3.0	Tinkerforge::BrickletIMUV3	bricklet_imu_v3
 2162	Industrial Dual AC Relay Bricklet	Tinkerforge::BrickletIndustrialDualACRelay	bricklet_industrial_dual_ac_relay
+2164	Industrial PTC Bricklet	Tinkerforge::BrickletIndustrialPTC	bricklet_industrial_ptc
+2165	DC Bricklet 2.0	Tinkerforge::BrickletDCV2	bricklet_dc_v2
+2166	Silent Stepper Bricklet 2.0	Tinkerforge::BrickletSilentStepperV2	bricklet_silent_stepper_v2
