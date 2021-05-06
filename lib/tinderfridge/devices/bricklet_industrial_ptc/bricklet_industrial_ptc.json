@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    12
+  ],
+  "weight": 11,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Industrial_PTC.html",
+  "versions_identifier": "bricklets:industrial_ptc",
+  "released": "2021-05-04"
+}

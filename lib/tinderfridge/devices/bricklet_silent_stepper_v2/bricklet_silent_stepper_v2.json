@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    15
+  ],
+  "weight": 12,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Silent_Stepper_V2.html",
+  "versions_identifier": "bricklets:silent_stepper_v2",
+  "released": "2021-05-04"
+}

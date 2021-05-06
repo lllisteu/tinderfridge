@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    15
+  ],
+  "weight": 12,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/DC_V2.html",
+  "versions_identifier": "bricklets:dc_v2",
+  "released": "2021-05-04"
+}
