@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    25,
+    15,
+    5
+  ],
+  "weight": 3,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Humidity_V2.html",
+  "versions_identifier": "bricklets:humidity_v2"
+}

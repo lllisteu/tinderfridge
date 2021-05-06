@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    25,
+    15,
+    5
+  ],
+  "weight": 2.1,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/UV_Light_V2.html",
+  "versions_identifier": "bricklets:uv_light_v2"
+}
