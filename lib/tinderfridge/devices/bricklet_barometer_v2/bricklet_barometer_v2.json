@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    25,
+    15,
+    5
+  ],
+  "weight": 1.6,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Barometer_V2.html",
+  "versions_identifier": "bricklets:barometer_v2"
+}
