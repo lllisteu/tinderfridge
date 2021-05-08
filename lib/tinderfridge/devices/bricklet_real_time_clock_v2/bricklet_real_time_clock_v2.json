@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    25,
+    25,
+    5
+  ],
+  "weight": 3,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/RealTime_Clock_V2.html",
+  "versions_identifier": "bricklets:real_time_clock_v2"
+}
