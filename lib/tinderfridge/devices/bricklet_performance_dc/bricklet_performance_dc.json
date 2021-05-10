@@ -6,5 +6,6 @@
   ],
   "weight": 50,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Performance_DC.html",
-  "versions_identifier": "bricklets:performance_dc"
+  "versions_identifier": "bricklets:performance_dc",
+  "released": "2021-01-14"
 }

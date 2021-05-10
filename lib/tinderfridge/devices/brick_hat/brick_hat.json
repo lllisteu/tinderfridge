@@ -6,5 +6,6 @@
   ],
   "weight": 30,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricks/HAT_Brick.html",
-  "versions_identifier": "bricklets:hat"
+  "versions_identifier": "bricklets:hat",
+  "released": "2019-05-21"
 }
