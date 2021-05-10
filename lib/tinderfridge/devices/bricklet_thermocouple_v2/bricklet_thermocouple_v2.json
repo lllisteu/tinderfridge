@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    40,
+    30,
+    8
+  ],
+  "weight": 9,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Thermocouple_V2.html",
+  "versions_identifier": "bricklets:thermocouple_v2"
+}

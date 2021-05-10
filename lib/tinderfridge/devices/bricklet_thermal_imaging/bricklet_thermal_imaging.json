@@ -1,0 +1,10 @@
+{
+  "dimensions": [
+    40,
+    40,
+    9
+  ],
+  "weight": 8,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Thermal_Imaging.html",
+  "versions_identifier": "bricklets:thermal_imaging"
+}
