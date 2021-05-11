@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    11
+  ],
+  "weight": 8.4,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Industrial_Counter.html",
+  "versions_identifier": "bricklets:industrial_counter",
+  "released": "2018-06-07"
+}

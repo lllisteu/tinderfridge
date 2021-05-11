@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    45,
+    35,
+    14
+  ],
+  "weight": 8.6,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/CAN_V2.html",
+  "versions_identifier": "bricklets:can_v2",
+  "released": "2018-06-07"
+}

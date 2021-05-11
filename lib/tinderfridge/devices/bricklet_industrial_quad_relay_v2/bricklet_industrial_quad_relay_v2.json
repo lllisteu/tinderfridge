@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    11
+  ],
+  "weight": 9,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Industrial_Quad_Relay_V2.html",
+  "versions_identifier": "bricklets:industrial_quad_relay_v2",
+  "released": "2018-06-07"
+}

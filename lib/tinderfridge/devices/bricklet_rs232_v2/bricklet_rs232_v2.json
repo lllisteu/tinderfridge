@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    45,
+    35,
+    17
+  ],
+  "weight": 20,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/RS232_V2.html",
+  "versions_identifier": "bricklets:rs232_v2",
+  "released": "2018-06-07"
+}
