@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    14
+  ],
+  "weight": 10,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Industrial_Digital_Out_4_V2.html",
+  "versions_identifier": "bricklets:industrial_digital_out_4_v2",
+  "released": "2018-09-27"
+}
