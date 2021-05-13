@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    7
+  ],
+  "weight": 8.2,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/OLED_128x64_V2.html",
+  "versions_identifier": "bricklets:oled_128x64_v2",
+  "released": "2018-09-27"
+}
