@@ -2,16 +2,20 @@
 
 # History
 
-## Unreleased
+## 0.7.0 (19 May 2021)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.7.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.7.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.7.0)
+
 * `IPConnection` class:
     * Added `#log_path` method.
     * `#state` includes update time and log_path.
 * Bricklet classes:
     * Added properties for various Bricklets.
 * Support for new Bricklets:
-    * DC Bricklet 2.0
-    * Industrial PTC Bricklet
-    * Silent Stepper Bricklet 2.0
+    * Added support for:
+        * DC Bricklet 2.0
+        * Industrial PTC Bricklet
+        * Silent Stepper Bricklet 2.0
+    * Note: the _Industrial Dual AC Relay Bricklet_ already is supported starting with version 0.0.1.
 * Fixed: calling `#state` on a `BrickDaemon` instance no longer raises an exception.
 
 ## 0.6.0 (2 April 2021)
