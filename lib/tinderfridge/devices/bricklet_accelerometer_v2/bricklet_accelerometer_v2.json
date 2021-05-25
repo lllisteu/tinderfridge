@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    25,
+    20,
+    5
+  ],
+  "weight": 2,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Accelerometer_V2.html",
+  "versions_identifier": "bricklets:accelerometer_v2",
+  "released": "2019-01-29"
+}
