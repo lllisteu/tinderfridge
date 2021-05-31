@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    45,
+    13,
+    5
+  ],
+  "weight": 8,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Distance_IR_V2.html",
+  "versions_identifier": "bricklets:distance_ir_v2",
+  "released": "2018-09-27"
+}
