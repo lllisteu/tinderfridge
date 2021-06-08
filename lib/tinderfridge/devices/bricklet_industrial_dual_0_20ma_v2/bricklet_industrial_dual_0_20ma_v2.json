@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    11
+  ],
+  "weight": 8,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Industrial_Dual_020mA_V2.html",
+  "versions_identifier": "bricklets:industrial_dual_0_20ma_v2",
+  "released": "2018-09-27"
+}
