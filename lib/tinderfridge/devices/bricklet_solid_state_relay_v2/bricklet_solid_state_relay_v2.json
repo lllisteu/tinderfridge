@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    19,
+    33.4,
+    5
+  ],
+  "weight": 2,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Solid_State_Relay_V2.html",
+  "versions_identifier": "bricklets:solid_state_relay_v2",
+  "released": "2018-02-26"
+}
