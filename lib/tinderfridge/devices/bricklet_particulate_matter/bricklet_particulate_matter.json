@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    70,
+    40,
+    15
+  ],
+  "weight": 36.3,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Particulate_Matter.html",
+  "versions_identifier": "bricklets:particulate_matter",
+  "released": "2018-06-07"
+}
