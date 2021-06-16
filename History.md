@@ -2,6 +2,11 @@
 
 # History
 
+## Unreleased
+
+* Bricklet classes:
+    * Added properties for various Bricklets.
+
 ## 0.7.0 (19 May 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.7.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.7.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.7.0)
 
