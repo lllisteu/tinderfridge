@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    30,
+    30,
+    14
+  ],
+  "weight": 6.5,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/One_Wire.html",
+  "versions_identifier": "bricklets:one_wire",
+  "released": "2018-09-27"
+}
