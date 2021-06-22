@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    30,
+    30,
+    14
+  ],
+  "weight": 7.3,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Load_Cell_V2.html",
+  "versions_identifier": "bricklets:load_cell_v2",
+  "released": "2018-06-07"
+}
