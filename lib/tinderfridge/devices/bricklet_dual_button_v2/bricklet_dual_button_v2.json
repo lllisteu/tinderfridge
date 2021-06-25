@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    45,
+    20,
+    10
+  ],
+  "weight": 5.5,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Dual_Button_V2.html",
+  "versions_identifier": "bricklets:dual_button_v2",
+  "released": "2018-09-27"
+}
