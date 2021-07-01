@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    35,
+    35,
+    14
+  ],
+  "weight": 15,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/IO4_V2.html",
+  "versions_identifier": "bricklets:io4_v2",
+  "released": "2018-06-07"
+}

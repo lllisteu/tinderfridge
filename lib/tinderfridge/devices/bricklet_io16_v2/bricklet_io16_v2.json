@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    35,
+    75,
+    14
+  ],
+  "weight": 30,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/IO16_V2.html",
+  "versions_identifier": "bricklets:io16_v2",
+  "released": "2018-09-27"
+}

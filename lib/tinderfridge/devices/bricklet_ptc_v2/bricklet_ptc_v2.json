@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    35,
+    30,
+    15
+  ],
+  "weight": 9,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/PTC_V2.html",
+  "versions_identifier": "bricklets:ptc_v2",
+  "released": "2018-06-07"
+}
