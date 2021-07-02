@@ -58,17 +58,17 @@ TaH      HAT Brick
 => 3
 ```
 
+Get a device's state:
+
+```ruby
+my_devices['bUt'].state
+=> {"uid"=>"bUt", "update_time"=>2021-07-02 10:55:51 UTC, "firmware_version"=>"2.0.2", "connected"=>{"uid"=>"TaH", "position"=>"d"}, "ipcon"=>{"host"=>"myhost.local", "port"=>4223}, "chip_temperature"=>27, "spitfp_error_count"=>[0, 1, 0, 0], "status_led_config"=>0, "color_rgb"=>[68, 9, 17], "color_calibration"=>[100, 100, 55], "pressed"=>false}
+```
+
 Switch off all blue status LEDs:
 
 ```ruby
 my_devices.set_status_led_config 0
-```
-
-Retrieve GPS' coordinates:
-
-```ruby
-my_devices['PSg'].coordinates
-=> [46.322121, 9.405033]
 ```
 
 Also see the [Tinderfridge documentation](https://www.rubydoc.info/gems/tinderfridge).
