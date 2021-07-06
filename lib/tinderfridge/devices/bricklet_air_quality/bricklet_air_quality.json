@@ -6,5 +6,6 @@
   ],
   "weight": 2.1,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Air_Quality.html",
-  "versions_identifier": "bricklets:air_quality"
+  "versions_identifier": "bricklets:air_quality",
+  "released": "2018-09-27"
 }

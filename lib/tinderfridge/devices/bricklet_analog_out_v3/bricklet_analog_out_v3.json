@@ -6,5 +6,6 @@
   ],
   "weight": 8,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Analog_Out_V3.html",
-  "versions_identifier": "bricklets:analog_out_v3"
+  "versions_identifier": "bricklets:analog_out_v3",
+  "released": "2018-09-27"
 }
