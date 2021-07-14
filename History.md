@@ -4,7 +4,10 @@
 
 ## Unreleased
 
+* Requires Tinkerforge bindings 2.1.28 or later.
 * Bricklet classes:
+    * `BrickletSegmentDisplay4x7V2`:
+        * Removed workaround for bug in Tinkerforge bindings < 2.1.28.
     * Added properties for various Bricklets.
 
 ## 0.7.0 (19 May 2021)

@@ -16,7 +16,7 @@ Tinderfridge has no dependencies outside Tinkerforge and the Ruby Standard Libra
 
 Requirements:
 
-* Tinkerforge 2.1.27 or newer.
+* Tinkerforge 2.1.28 or newer.
 * Ruby 2.5 or newer.
 
 ## Quick start
