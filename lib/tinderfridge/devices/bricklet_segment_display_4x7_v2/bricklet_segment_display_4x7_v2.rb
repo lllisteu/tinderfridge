@@ -12,7 +12,7 @@ module Tinkerforge
 
     # Returns the state of all 35 segments.
     def segments
-      send_request FUNCTION_GET_SEGMENTS, [], '', 14, '?35'
+      get_segments.flatten
     end
 
     # Sets the state of all 35 segments.
