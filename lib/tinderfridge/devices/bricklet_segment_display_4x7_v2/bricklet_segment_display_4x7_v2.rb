@@ -123,6 +123,28 @@ module Tinkerforge
       }
     end
 
+    # Displays an 8-segment bar graph for 1 or 2 values in the range 0..1.
+    #
+    # @example
+    #  my_bricklet.bar_graph 0.5
+    #  my_bricklet.bar_graph 0.5, 0.8
+    def bar_graph(value1, value2=value1)
+      value1, value2 = [value1, value2].map { |v| (v.to_f.clamp(0,1) * 8).round }
+
+      frame = [false] * 35
+
+      [ 5, 1, 13,  9, 21, 17, 29, 25 ].first(value1).each do |n|
+        frame[n] = true
+      end
+
+      [ 4, 2, 12, 10, 20, 18, 28, 26 ].first(value2).each do |n|
+        frame[n] = true
+      end
+
+      self.segments = frame
+      [value1, value2]
+    end
+
   end
 
 end
