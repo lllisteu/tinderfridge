@@ -7,6 +7,7 @@
 * Requires Tinkerforge bindings 2.1.28 or later.
 * Bricklet classes:
     * `BrickletSegmentDisplay4x7V2`:
+        * Added `#bar_graph` method.
         * Removed workaround for bug in Tinkerforge bindings < 2.1.28.
     * Added properties for various Bricklets.
 
