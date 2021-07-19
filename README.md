@@ -16,7 +16,7 @@ Tinderfridge has no dependencies outside Tinkerforge and the Ruby Standard Libra
 
 Requirements:
 
-* Tinkerforge 2.1.28 or newer.
+* [Tinkerforge 2.1.28 or newer](https://rubygems.org/gems/tinkerforge).
 * Ruby 2.5 or newer.
 
 ## Quick start
@@ -29,14 +29,14 @@ require 'tinderfridge'
 
 Tinkerforge will work as before, but with some extra powers.
 
-For instance, you can create an IP Connection like this:
+For instance, you can create an [IP Connection](https://www.tinkerforge.com/en/doc/Software/IPConnection_Ruby.html) like this:
 
 ```ruby
 ipcon = Tinkerforge.connect 'myhost.local'
 => Tinkerforge::IPConnection (myhost.local:4223)
 ```
 
-Access to Bricks and Bricklets is easy:
+Access to [Bricks](https://www.tinkerforge.com/en/doc/Software/Bricks_Ruby.html) and [Bricklets](https://www.tinkerforge.com/en/doc/Software/Bricklets_Ruby.html) is easy:
 
 ```ruby
 my_devices = ipcon.discover
