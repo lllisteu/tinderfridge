@@ -19,6 +19,8 @@ Requirements:
 * [Tinkerforge 2.1.28 or newer](https://rubygems.org/gems/tinkerforge).
 * Ruby 2.5 or newer.
 
+Older versions of Tinderfridge will work with Tinkerforge 2.1.27 or newer.
+
 ## Quick start
 
 Add this line at the beginning of your program (or type in [IRB](https://ruby-doc.org/stdlib/libdoc/irb/rdoc/IRB.html)):

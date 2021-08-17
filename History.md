@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.8.0 (17 August 2021)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.8.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.8.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.8.0)
 
 * Requires Tinkerforge bindings 2.1.28 or later.
 * Bricklet classes:
