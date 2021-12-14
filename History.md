@@ -2,6 +2,11 @@
 
 # History
 
+## Unreleased
+
+* Added properties for Master Bricks.
+* Fixed: calling `#state` on a Master Brick no longer raises an exception.
+
 ## 0.8.0 (17 August 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.8.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.8.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.8.0)
 
