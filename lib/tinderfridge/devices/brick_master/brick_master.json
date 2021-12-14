@@ -1,0 +1,13 @@
+{
+  "device_identifier": 13,
+  "device_display_name": "Master Brick",
+  "dimensions": [
+    40,
+    40,
+    16
+  ],
+  "weight": 12,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricks/Master_Brick.html",
+  "versions_identifier": "bricks:master",
+  "released": ""
+}
