@@ -109,7 +109,13 @@ module Tinkerforge
         [ 'ipcon'    , { 'host' => ipcon.host , 'port'     => ipcon.port  } ],
 
         respond_to?('get_chip_temperature'  ) ? [ 'chip_temperature'  , get_chip_temperature   ] : nil,
-        respond_to?('get_spitfp_error_count') ? [ 'spitfp_error_count', get_spitfp_error_count ] : nil,
+
+        if respond_to?('get_spitfp_error_count') and (method(:get_spitfp_error_count).arity == 0)
+          [ 'spitfp_error_count', get_spitfp_error_count ]
+        else
+          nil
+        end,
+
         respond_to?('get_status_led_config' ) ? [ 'status_led_config' , get_status_led_config  ] : nil,
 
       ].compact.to_h
