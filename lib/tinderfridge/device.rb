@@ -137,9 +137,30 @@ module Tinkerforge
 
     # Identifies a Tinkerforge device by blinking its status led.
     #
-    # Supports recent devices. When invoked on older devices, does nothing.
+    # Supports recent devices. When invoked on some older devices, does nothing.
     def identify(seconds=10)
-      if (respond_to? 'get_status_led_config') and (respond_to? 'set_status_led_config')
+      case status_led_api_variety
+      when 1
+        seconds = seconds.to_i
+        state   = is_status_led_enabled
+
+        (seconds*2).times do |n|
+          if n.even?
+            disable_status_led
+          else
+            enable_status_led
+          end
+          sleep 0.5
+        end
+
+        if state
+          enable_status_led
+        else
+          disable_status_led
+        end
+
+        seconds
+      when 2
         seconds = seconds.to_i
         state = get_status_led_config
 
@@ -179,6 +200,20 @@ module Tinkerforge
       else
         {}
       end
+    end
+
+    def status_led_api_variety
+      @status_led_api_variety ||=
+        if ( respond_to?('get_status_led_config') &&
+             respond_to?('set_status_led_config') )
+          2
+        elsif ( respond_to?('is_status_led_enabled') &&
+                respond_to?('enable_status_led')     &&
+                respond_to?('disable_status_led') )
+          1
+        else
+          nil
+        end
     end
 
   end
