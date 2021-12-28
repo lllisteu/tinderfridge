@@ -4,13 +4,14 @@
 
 ## Unreleased
 
-* Brick classes:
-	* Added properties for Master Bricks.
-	* Fixed: calling `#state` on a Master Brick no longer raises an exception.
 * Bricklet classes:
     * `BrickletCO2V2`:
         * `#state` includes CO2 concentration, temperature, temperature offset, humidity, and air pressure.
-    * Added properties for various Bricklets.
+    * `BrickletSoundPressureLevel`:
+        * `#state` includes configuration, weighting, sampling rate, bin size, and sound pressure.
+  * `#identify` works on more devices, including Master Bricks.
+  * Added properties for various Bricks and Bricklets.
+  * Fixed: calling `#state` on a `BrickMaster` instance no longer raises an exception.
 
 ## 0.8.0 (17 August 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.8.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.8.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.8.0)
