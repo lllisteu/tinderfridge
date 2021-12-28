@@ -6,6 +6,7 @@ module Tinkerforge
     #
     # Nil for devices that do not support the get_chip_temperature method.
     def get_chip_temperature
+      # TODO: normalise units returned (either °C or 1/10 °C).
       smap 'get_chip_temperature'
     end
 
@@ -28,6 +29,7 @@ module Tinkerforge
     #
     # Nil for devices that do not support the get_spitfp_error_count method.
     def get_spitfp_error_count
+      # TODO: Handle arity.
       smap 'get_spitfp_error_count'
     end
 
