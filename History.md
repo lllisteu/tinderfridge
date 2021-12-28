@@ -9,9 +9,9 @@
         * `#state` includes CO2 concentration, temperature, temperature offset, humidity, and air pressure.
     * `BrickletSoundPressureLevel`:
         * `#state` includes configuration, weighting, sampling rate, bin size, and sound pressure.
-  * `#identify` works on more devices, including Master Bricks.
-  * Added properties for various Bricks and Bricklets.
-  * Fixed: calling `#state` on a `BrickMaster` instance no longer raises an exception.
+* `#identify` works on more devices, including Master Bricks.
+* Added properties for various Bricks and Bricklets.
+* Fixed: calling `#state` on a `BrickMaster` instance no longer raises an exception.
 
 ## 0.8.0 (17 August 2021)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.8.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.8.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.8.0)
