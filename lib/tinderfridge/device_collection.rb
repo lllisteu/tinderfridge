@@ -29,7 +29,6 @@ module Tinkerforge
     #
     # Nil for devices that do not support the get_spitfp_error_count method.
     def get_spitfp_error_count
-      # TODO: Handle arity.
       smap 'get_spitfp_error_count'
     end
 
@@ -137,7 +136,7 @@ module Tinkerforge
     private
 
     def smap(m)
-      map { |k,d| [ k, d.respond_to?(m) ? d.send(m) : nil ] }.to_h
+      map { |k,d| [ k, ( d.respond_to?(m) and (d.method(m).arity == 0) ) ? d.send(m) : nil ] }.to_h
     end
 
   end
