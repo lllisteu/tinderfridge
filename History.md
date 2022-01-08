@@ -7,6 +7,9 @@
 * Bricklet classes:
     * `BrickletCO2V2`:
         * `#state` includes CO2 concentration, temperature, temperature offset, humidity, and air pressure.
+    * `BrickletGPSV2`:
+        * Added `#fix?` method.
+        * `#state` includes fix availability and fix LED configuration.
     * `BrickletSoundPressureLevel`:
         * `#state` includes configuration, weighting, sampling rate, bin size, and sound pressure.
 * `#identify` works on more devices, including Master Bricks.
