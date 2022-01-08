@@ -2,11 +2,24 @@ module Tinkerforge
 
   class BrickletGPSV2
 
+    # Returns the device's state.
+    def state
+      super.merge(
+        'fix_led_config' => get_fix_led_config,
+        'fix'            => fix?,
+      )
+    end
+
+    # Returns true if a fix is available.
+    def fix?
+      get_status[0]
+    end
+
     # Returns latitude and longitude as reported by the GPS Bricklet.
     #
     # Nil when there is no fix (position not determined).
     def coordinates
-      if get_status[0]
+      if fix?
         c = get_coordinates
         [
           c[0] / (c[1] == 'N' ? 1000000.0 : -1000000.0),
