@@ -5,8 +5,9 @@ module Tinkerforge
     # Returns the temperatures as measured inside the microcontrollers of devices in the collection.
     #
     # Nil for devices that do not support the get_chip_temperature method.
+    #
+    # Note: most devices return temperature in °C, but a few return temperature in 1/10 °C.
     def get_chip_temperature
-      # TODO: normalise units returned (either °C or 1/10 °C).
       smap 'get_chip_temperature'
     end
 
