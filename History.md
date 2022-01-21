@@ -10,6 +10,8 @@
     * `BrickletGPSV2`:
         * Added `#fix?` method.
         * `#state` includes fix availability and fix LED configuration.
+    * `BrickletSegmentDisplay4x7V2`:
+        * Added ° (degree symbol) to the printable glyphs.
     * `BrickletSoundPressureLevel`:
         * `#state` includes configuration, weighting, sampling rate, bin size, and sound pressure.
 * `#identify` works on more devices, including Master Bricks.
