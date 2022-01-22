@@ -6,5 +6,6 @@
   ],
   "weight": 2,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Compass.html",
-  "versions_identifier": "bricklets:compass"
+  "versions_identifier": "bricklets:compass",
+  "released": "2019-08-22"
 }
