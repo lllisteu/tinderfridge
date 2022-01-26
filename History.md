@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.9.0 (26 January 2022)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.9.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.9.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.9.0)
 
 * Bricklet classes:
     * `BrickletCO2V2`:
