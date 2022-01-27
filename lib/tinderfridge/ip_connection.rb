@@ -117,17 +117,22 @@ module Tinkerforge
 
   end
 
-  # Creates an IP Connection object connected to the given host and port.
-  #
-  # If no host and port are specified, uses the TINKERFORGE_HOST and TINKERFORGE_PORT environment variables, when defined.
-  # Otherwise defaults to 'localhost' and port 4223.
-  def self.connect(host=nil, port=nil)
-    ipcon = IPConnection.new
-    ipcon.connect(
-      ( host || ENV['TINKERFORGE_HOST'] || 'localhost' ),
-      ( port || ENV['TINKERFORGE_PORT'] ||  4223       )
-    )
-    ipcon
+
+  class << self
+
+    # Creates an IP Connection object connected to the given host and port.
+    #
+    # If no host and port are specified, uses the TINKERFORGE_HOST and TINKERFORGE_PORT environment variables, when defined.
+    # Otherwise defaults to 'localhost' and port 4223.
+    def connect(host=nil, port=nil)
+      ipcon = IPConnection.new
+      ipcon.connect(
+        ( host || ENV['TINKERFORGE_HOST'] || 'localhost' ),
+        ( port || ENV['TINKERFORGE_PORT'] ||  4223       )
+      )
+      ipcon
+    end
+
   end
 
 end
