@@ -19,6 +19,17 @@ module Tinkerforge
       end.compact
     end
 
+    # Discovers local devices.
+    #
+    # Connects to 'localhost', and returns devices discovered there. If no port is specified, defaults to port 4223.
+    # @example
+    #  Tinkerforge.local.ls
+    # @example Mac only
+    #  Tinkerforge.local.doc
+    def local(port=4223)
+      connect('localhost', port).discover(0.25)
+    end
+
   end
 
 end
