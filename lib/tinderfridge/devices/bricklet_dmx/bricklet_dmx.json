@@ -6,5 +6,6 @@
   ],
   "weight": 30,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/DMX.html",
-  "versions_identifier": "bricklets:dmx"
+  "versions_identifier": "bricklets:dmx",
+  "released": "2017-11-17"
 }
