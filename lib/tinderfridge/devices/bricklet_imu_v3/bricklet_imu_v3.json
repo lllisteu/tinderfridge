@@ -6,5 +6,6 @@
   ],
   "weight": 3,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/IMU_V3.html",
-  "versions_identifier": "bricklets:imu_v3"
+  "versions_identifier": "bricklets:imu_v3",
+  "released": "2020-10-27"
 }
