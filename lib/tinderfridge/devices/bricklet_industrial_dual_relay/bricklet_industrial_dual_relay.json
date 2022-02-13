@@ -6,5 +6,6 @@
   ],
   "weight": 29.4,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Industrial_Dual_Relay.html",
-  "versions_identifier": "bricklets:industrial_dual_relay"
+  "versions_identifier": "bricklets:industrial_dual_relay",
+  "released": "2018-06-07"
 }
