@@ -6,5 +6,6 @@
   ],
   "weight": 67,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Motorized_Linear_Poti.html",
-  "versions_identifier": "bricklets:motorized_linear_poti"
+  "versions_identifier": "bricklets:motorized_linear_poti",
+  "released": "2017-11-17"
 }

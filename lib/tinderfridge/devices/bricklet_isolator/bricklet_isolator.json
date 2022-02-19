@@ -6,5 +6,6 @@
   ],
   "weight": 7.1,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Isolator.html",
-  "versions_identifier": "bricklets:isolator"
+  "versions_identifier": "bricklets:isolator",
+  "released": "2018-09-10"
 }

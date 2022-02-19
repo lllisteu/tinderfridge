@@ -6,5 +6,6 @@
   ],
   "weight": 12,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/XMC1400_Breakout.html",
-  "versions_identifier": "bricklets:xmc1400_breakout"
+  "versions_identifier": "bricklets:xmc1400_breakout",
+  "released": "2019-08-22"
 }
