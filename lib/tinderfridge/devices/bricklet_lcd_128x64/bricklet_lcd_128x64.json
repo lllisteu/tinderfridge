@@ -6,5 +6,6 @@
   ],
   "weight": 55,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/LCD_128x64.html",
-  "versions_identifier": "bricklets:lcd_128x64"
+  "versions_identifier": "bricklets:lcd_128x64",
+  "released": "2018-09-27"
 }

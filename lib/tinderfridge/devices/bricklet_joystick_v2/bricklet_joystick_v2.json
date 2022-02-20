@@ -6,5 +6,6 @@
   ],
   "weight": 15,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Joystick_V2.html",
-  "versions_identifier": "bricklets:joystick_v2"
+  "versions_identifier": "bricklets:joystick_v2",
+  "released": "2019-05-20"
 }
