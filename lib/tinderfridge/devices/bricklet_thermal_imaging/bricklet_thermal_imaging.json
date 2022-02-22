@@ -6,5 +6,6 @@
   ],
   "weight": 8,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Thermal_Imaging.html",
-  "versions_identifier": "bricklets:thermal_imaging"
+  "versions_identifier": "bricklets:thermal_imaging",
+  "released": "2017-11-17"
 }

@@ -6,5 +6,6 @@
   ],
   "weight": 14,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Linear_Poti_V2.html",
-  "versions_identifier": "bricklets:linear_poti_v2"
+  "versions_identifier": "bricklets:linear_poti_v2",
+  "released": "2019-05-20"
 }
