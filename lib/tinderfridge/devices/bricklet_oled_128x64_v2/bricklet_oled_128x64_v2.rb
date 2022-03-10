@@ -9,6 +9,28 @@ module Tinkerforge
       )
     end
 
+    # Clears the display and prints upto 8 lines of text.
+    #
+    # Text may contain newline characters to separate lines.
+    # Lines longer than 21 characters will be wrapped.
+    #
+    # Text is automatically encoded in the IBM437 character set.
+    # @example
+    #  my_oled.put_screen "Hello, World!\n\nRuby #{RUBY_VERSION}"
+    def put_screen(text='', test: false)
+      lines = text.split("\n")
+      lines = lines.map { |s| s.empty? ? '' : s.scan(/.{1,21}/) }.flatten
+      lines = lines[0,8].map { |l| encode l }
+
+      return lines if test
+
+      clear_display
+      lines.each_with_index do |s,l|
+        write_line l, 0, s
+      end
+      nil
+    end
+
     # Encodes a string in the IBM437 character set used by the OLED display.
     #
     # Characters that can not be encoded are replaced with '?'.
