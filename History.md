@@ -6,6 +6,10 @@
 
 * `Tinkerforge` gains:
     * `.local` method.
+* Bricklet classes:
+    * `BrickletOLED128x64V2`:
+        * Added `#encode` method.
+        * `#state` includes display configuration.
 * Added properties for various Bricklets.
 
 ## 0.9.0 (26 January 2022)
