@@ -2,6 +2,13 @@ module Tinkerforge
 
   class BrickletOLED128x64V2
 
+    # Returns the device's state.
+    def state
+      super.merge(
+        'display_configuration' => get_display_configuration,
+      )
+    end
+
     # Encodes a string in the IBM437 character set used by the OLED display.
     #
     # Characters that can not be encoded are replaced with '?'.
