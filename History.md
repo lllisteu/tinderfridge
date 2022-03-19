@@ -7,9 +7,16 @@
 * `Tinkerforge` gains:
     * `.local` method.
 * Bricklet classes:
+    * `BrickletGPSV2`:
+        * Added `#openstreetmap_marker_url` method.
+    * `BrickletHallEffectV2`:
+        * `#state` includes magnetic flux density, counter, and counter configuration.
     * `BrickletOLED128x64V2`:
         * Added `#encode` method.
+        * Added `#put_screen` method.
         * `#state` includes display configuration.
+    * `BrickletTemperatureIRV2`:
+        * `#state` includes emissivity.
 * Added properties for various Bricklets.
 
 ## 0.9.0 (26 January 2022)
