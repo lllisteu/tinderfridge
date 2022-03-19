@@ -39,6 +39,13 @@ module Tinkerforge
       Time.gm *dt.map(&:to_i)
     end
 
+    # Returns a URL for viewing the current coordinates on OpenStreetMap.
+    def openstreetmap_marker_url(zoom=12)
+      if c = coordinates
+        "https://www.openstreetmap.org/?mlat=%f&mlon=%f&zoom=%d" % [c, zoom].flatten
+      end
+    end
+
   end
 
 end
