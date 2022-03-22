@@ -2,6 +2,23 @@ module Tinkerforge
 
   class BrickletOLED128x64V2
 
+    # Turns the display all black.
+    def blackout
+      c = get_display_configuration
+
+      if c[1] # inverted
+        set_display_configuration c[0], false, c[2]
+      end
+
+      clear_display
+
+      if ! c[2] # buffered
+        draw_buffered_frame(true)
+      end
+
+      true
+    end
+
     # Returns true if automatic draw is set to false.
     def buffered?
       ! get_display_configuration[2]
