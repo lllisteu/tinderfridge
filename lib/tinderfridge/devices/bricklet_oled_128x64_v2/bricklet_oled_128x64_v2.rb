@@ -2,6 +2,11 @@ module Tinkerforge
 
   class BrickletOLED128x64V2
 
+    # Returns true if automatic draw is set to false.
+    def buffered?
+      ! get_display_configuration[2]
+    end
+
     # Returns the device's state.
     def state
       super.merge(
