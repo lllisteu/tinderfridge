@@ -14,6 +14,9 @@
     * `BrickletOLED128x64V2`:
         * Added `#encode` method.
         * Added `#put_screen` method.
+        * Added `#buffered?` method.
+        * Added `#redraw` method and `#flush` alias.
+        * Added `#blackout` method.
         * `#state` includes display configuration.
     * `BrickletTemperatureIRV2`:
         * `#state` includes emissivity.
