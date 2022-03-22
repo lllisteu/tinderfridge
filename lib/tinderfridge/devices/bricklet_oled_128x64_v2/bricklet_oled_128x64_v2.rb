@@ -7,6 +7,13 @@ module Tinkerforge
       ! get_display_configuration[2]
     end
 
+    # Draws the currently buffered frame.
+    def redraw(force_complete_redraw=false)
+      draw_buffered_frame force_complete_redraw
+    end
+
+    alias flush redraw
+
     # Returns the device's state.
     def state
       super.merge(
