@@ -16,7 +16,6 @@ module Tinkerforge
       ibm437_encode(string)
     end
 
-
     # Returns the current setting for the backlight (0..100).
     def backlight
       get_display_configuration[1]
