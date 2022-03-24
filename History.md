@@ -11,6 +11,8 @@
         * Added `#openstreetmap_marker_url` method.
     * `BrickletHallEffectV2`:
         * `#state` includes magnetic flux density, counter, and counter configuration.
+    * `BrickletLCD128x64`:
+        * Added `#encode` method.
     * `BrickletOLED128x64V2`:
         * Added `#encode` method.
         * Added `#put_screen` method.
