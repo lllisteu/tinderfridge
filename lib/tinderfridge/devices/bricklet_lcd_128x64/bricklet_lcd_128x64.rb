@@ -34,6 +34,18 @@ module Tinkerforge
       true
     end
 
+    # Returns the current contrast setting (0..63).
+    def contrast
+      get_display_configuration[0]
+    end
+
+    # Sets the contrast (0..63).
+    def contrast=(value)
+      state = get_display_configuration
+      state[0] = value.to_i
+      set_display_configuration *state
+    end
+
     # Clears the display, including the GUI.
     def clear
       clear_display
