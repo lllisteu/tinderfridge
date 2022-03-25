@@ -52,6 +52,18 @@ module Tinkerforge
       remove_all_gui
     end
 
+    # Returns true if automatic draw is set to false.
+    def buffered?
+      ! get_display_configuration[3]
+    end
+
+    # Draws the currently buffered frame.
+    def redraw(force_complete_redraw=false)
+      draw_buffered_frame force_complete_redraw
+    end
+
+    alias flush redraw
+
   end
 
 end
