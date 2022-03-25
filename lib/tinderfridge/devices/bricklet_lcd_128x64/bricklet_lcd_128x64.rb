@@ -64,6 +64,14 @@ module Tinkerforge
 
     alias flush redraw
 
+    # Returns the device's state.
+    def state
+      super.merge(
+        'touch_led_config'      => get_touch_led_config,
+        'display_configuration' => get_display_configuration,
+      )
+    end
+
   end
 
 end
