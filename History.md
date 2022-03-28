@@ -13,6 +13,10 @@
         * `#state` includes magnetic flux density, counter, and counter configuration.
     * `BrickletLCD128x64`:
         * Added `#encode` method.
+        * Added `#contrast` and `#contrast=` methods.
+        * Added `#buffered?` method.
+        * Added `#redraw` method and `#flush` alias.
+        * `#state` includes touch led- and display configuration.
     * `BrickletOLED128x64V2`:
         * Added `#encode` method.
         * Added `#put_screen` method.
