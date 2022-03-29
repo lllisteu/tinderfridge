@@ -10,6 +10,9 @@ module Tinkerforge
     # Returns the port for the IP Connection.
     attr_reader :port
 
+    # Returns the network socket used by the IP Connection.
+    attr_reader :socket
+
     # Returns a programmer-friendly representation of the object.
     def inspect
       "%s (%s:%s)" % [self.class, host, port]
