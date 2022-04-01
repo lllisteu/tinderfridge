@@ -6,7 +6,11 @@
 
 * `Tinkerforge` gains:
     * `.local` method.
+* `IPConnection` class:
+    * Added `#socket` method.
 * Bricklet classes:
+    * `BrickletAirQuality`:
+        * Added `#qff` method.
     * `BrickletGPSV2`:
         * Added `#openstreetmap_marker_url` method.
     * `BrickletHallEffectV2`:
