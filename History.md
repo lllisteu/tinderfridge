@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.10.0 (4 April 2022)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.10.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.10.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.10.0)
 
 * `Tinkerforge` gains:
     * `.local` method.
