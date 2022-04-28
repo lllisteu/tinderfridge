@@ -2,6 +2,14 @@
 
 # History
 
+## Unreleased
+
+* Bricklet classes:
+    * `BrickletBarometerV2`:
+        * `#state` includes air pressure, calibration, altitude, reference air pressure, temperature, moving average configuration, and sensor configuration.
+    * `BrickletLCD128x64`:
+        * Added `#put_screen` method.
+
 ## 0.10.0 (4 April 2022)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.10.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.10.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.10.0)
 
