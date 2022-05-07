@@ -94,6 +94,21 @@ module Tinkerforge
       nil
     end
 
+    # Shows an object.
+    def show(object)
+      if object.respond_to?( :_view_21x8, true)
+        put_screen object.send :_view_21x8
+      elsif
+        put_screen object.inspect[0,168]
+      end
+    end
+
+    private
+
+    def _view_21x8
+      "LCD          #{uid_string.rjust 8}"
+    end
+
   end
 
 end
