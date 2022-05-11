@@ -16,6 +16,8 @@
 29	IO-4 Bricklet	Tinkerforge::BrickletIO4	bricklet_io4
 111	HAT Brick	Tinkerforge::BrickHAT	brick_hat
 112	HAT Zero Brick	Tinkerforge::BrickHATZero	brick_hat_zero
+113	ESP32 Brick	Tinkerforge::BrickESP32	brick_esp32
+115	ESP32 Ethernet Brick	Tinkerforge::BrickESP32Ethernet	brick_esp32_ethernet
 210	Joystick Bricklet	Tinkerforge::BrickletJoystick	bricklet_joystick
 211	LCD 16x2 Bricklet	Tinkerforge::BrickletLCD16x2	bricklet_lcd_16x2
 212	LCD 20x4 Bricklet	Tinkerforge::BrickletLCD20x4	bricklet_lcd_20x4
@@ -142,3 +144,4 @@
 2164	Industrial PTC Bricklet	Tinkerforge::BrickletIndustrialPTC	bricklet_industrial_ptc
 2165	DC Bricklet 2.0	Tinkerforge::BrickletDCV2	bricklet_dc_v2
 2166	Silent Stepper Bricklet 2.0	Tinkerforge::BrickletSilentStepperV2	bricklet_silent_stepper_v2
+2171	GPS Bricklet 3.0	Tinkerforge::BrickletGPSV3	bricklet_gps_v3
