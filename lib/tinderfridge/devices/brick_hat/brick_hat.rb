@@ -20,8 +20,8 @@ module Tinkerforge
       <<~ET
       HAT          #{uid_string.rjust 8}
 
-      USB #{'%5.2f V' % [volts[0]*0.001]}
-      DC  #{'%5.2f V' % [volts[1]*0.001]}
+           USB #{'%5.2f V' % [volts[0]*0.001]}
+           DC  #{'%5.2f V' % [volts[1]*0.001]}
       ET
     end
 
