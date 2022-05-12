@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    88,
+    45,
+    12
+  ],
+  "weight": 20,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricks/ESP32_Ethernet_Brick.html",
+  "versions_identifier": "bricks:esp32_ethernet",
+  "released": "2022-04-29"
+}

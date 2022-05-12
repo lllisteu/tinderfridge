@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    66,
+    40,
+    9
+  ],
+  "weight": 14,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricks/ESP32_Brick.html",
+  "versions_identifier": "bricks:esp32",
+  "released": "2022-04-29"
+}
