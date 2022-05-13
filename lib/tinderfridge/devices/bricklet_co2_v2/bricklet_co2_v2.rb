@@ -14,6 +14,16 @@ module Tinkerforge
       )
     end
 
+    private
+
+    def _view_21x8
+      <<~ET
+      CO2          #{uid_string.rjust 8}
+
+            #{'%5d PPM' % get_co2_concentration}
+      ET
+    end
+
   end
 
 end

@@ -46,6 +46,13 @@ module Tinkerforge
       end
     end
 
+    private
+
+    def _view_21x8
+      "GPS          #{uid_string.rjust 8}\n\n" +
+      ((c = coordinates) ? ("   Lat %10.5f\n   Lon %10.5f" % c) : '       no fix')
+    end
+
   end
 
 end
