@@ -10,7 +10,7 @@ module Tinkerforge
       )
     end
 
-#    private
+    private
 
     def _view_21x8
       <<~ET
