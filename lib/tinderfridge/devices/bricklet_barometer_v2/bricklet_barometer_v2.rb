@@ -14,6 +14,17 @@ module Tinkerforge
         'sensor_configuration'         => get_sensor_configuration,
       )
     end
+
+    private
+
+    def _view_21x8
+      <<~ET
+      Baro         #{uid_string.rjust 8}
+
+          #{'%7.2f hPa' % [get_air_pressure*0.001]}
+      ET
+    end
+
   end
 
 end
