@@ -97,7 +97,7 @@ module Tinkerforge
     # Shows an object.
     def show(object)
       if object.respond_to?( :_view_21x8, true)
-        put_screen object.send :_view_21x8
+        put_screen ( object.send(:_view_21x8) rescue "21x8 view error\n\n#{object.class.to_s}" )
       elsif
         put_screen object.inspect[0,168]
       end
