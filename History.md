@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.11.0 (24 May 2022)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.11.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.11.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.11.0)
 
 * Added support for new devices:
     * ESP32 Brick
