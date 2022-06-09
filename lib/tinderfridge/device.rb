@@ -15,6 +15,7 @@ module Tinkerforge
       # With help from:
       # - https://stackoverflow.com/questions/2393697
       def descendants
+        # NOTE: Ruby 3.1 has Class#subclasses
         ObjectSpace.each_object(Class).select { |klass| klass < self }
       end
 
