@@ -2,6 +2,13 @@ module Tinkerforge
 
   class BrickletOutdoorWeather
 
+    # Returns the device's state.
+    def state
+      super.merge(
+        'sensor_data' => sensors,
+      )
+    end
+
     # Returns the last measured data for all sensors.
     #
     # The result is a Hash, with sensor identifiers as the keys. Values per sensor are:
