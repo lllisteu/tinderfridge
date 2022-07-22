@@ -4,7 +4,7 @@
     35,
     12
   ],
-  "weight": 20,
+  "weight": 16,
   "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/GPS_V2.html",
   "versions_identifier": "bricklets:gps_v2",
   "released": "2017-05-11"
