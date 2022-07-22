@@ -1,6 +1,6 @@
 module Tinkerforge
 
-  class BrickletGPSV2
+  class BrickletGPSV3
 
     # Returns the device's state.
     def state
@@ -49,7 +49,7 @@ module Tinkerforge
     private
 
     def _view_21x8
-      "GPSv2        #{uid_string.rjust 8}\n\n" +
+      "GPSv3        #{uid_string.rjust 8}\n\n" +
       ((c = coordinates) ? ("   Lat %10.5f\n   Lon %10.5f" % c) : '       no fix')
     end
 
