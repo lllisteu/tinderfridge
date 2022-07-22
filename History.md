@@ -5,8 +5,16 @@
 ## Unreleased
 
 * Bricklet classes:
+    * `BrickletGPSV3`:
+        * Added `#fix?` method.
+        * Added `#coordinates` method.
+        * Added `#time` method.
+        * Added `#openstreetmap_marker_url` method.
+        * `#state` includes fix availability and fix LED configuration.
     * `BrickletOutdoorWeather`:
         * `#state` includes sensor data.
+    * `BrickletPiezoSpeakerV2`:
+        * Added `#blip` method.
 
 ## 0.11.0 (24 May 2022)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.11.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.11.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.11.0)
