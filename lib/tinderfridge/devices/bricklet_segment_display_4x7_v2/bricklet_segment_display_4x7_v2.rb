@@ -147,6 +147,35 @@ module Tinkerforge
       [value1, value2]
     end
 
+    # Returns the current thread automatically updating the display.
+    def thread
+      @thread
+    end
+
+    # Stops automatic updating of the display.
+    def stop
+      if thread
+        thread.exit
+        @thread = nil
+      end
+    end
+
+    # Continuously displays the current time, in 24-hour format.
+    #
+    # Starts a new thread automatically updating the display. Use the stop method to end.
+    #
+    # By default uses local time, or optionally UTC.
+    def clock(utc=false)
+      stop
+      @thread = Thread.new do
+        while true
+          t = utc ? Time.now.getutc : Time.now
+          print t.strftime("%H#{t.sec.even? ? ':' : ''}%M")
+          sleep 0.5
+        end
+      end
+    end
+
   end
 
 end
