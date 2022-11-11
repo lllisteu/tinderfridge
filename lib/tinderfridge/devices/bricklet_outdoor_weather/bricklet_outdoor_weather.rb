@@ -16,8 +16,9 @@ module Tinkerforge
     # - 1: Relative humidity (%RH)
     # - 2: Last change (seconds)
     def sensors
+      sensormap = (config['sensormap'].class == Hash) ? config['sensormap'] : {}
       get_sensor_identifiers.map do |id|
-        [ id, get_sensor_data(id).each_with_index.map { |v,i| i == 0 ? v/10.0 : v } ]
+        [ (sensormap[id] || id), get_sensor_data(id).each_with_index.map { |v,i| i == 0 ? v/10.0 : v } ]
       end.to_h
     end
 
