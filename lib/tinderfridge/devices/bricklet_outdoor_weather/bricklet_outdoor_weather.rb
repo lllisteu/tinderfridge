@@ -26,7 +26,7 @@ module Tinkerforge
     def _view_21x8
       "Weather      #{uid_string.rjust 8}\n\n" +
       sensors.first(6).map do |k,v|
-        %Q(#{v[2] > 100 ? '?' : ' '} %3d  %4.1f °C  %2d %%\n) % [k,v].flatten
+        %Q(#{v[2] > 100 ? '!' : ' '}%-8.8s %5.1f°C%3d%%\n) % [k,v].flatten
       end.join
     end
 
