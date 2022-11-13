@@ -77,6 +77,11 @@ module Tinkerforge
       smap 'state'
     end
 
+    # Returns configuration data of devices in the collection.
+    def config
+      smap 'config'
+    end
+
     # Opens the online documentation for the devices in the collection (Mac OS only).
     #
     # When the URL for a device's documentation is not known, does nothing.
