@@ -122,6 +122,11 @@ module Tinkerforge
       ].compact.to_h
     end
 
+    # Returns configuration data for the device (a mutable Hash).
+    def config
+      @config ||= {}
+    end
+
     # Opens the online documentation for the device (Mac OS only).
     #
     # When the URL for the documentation is not known, does nothing.

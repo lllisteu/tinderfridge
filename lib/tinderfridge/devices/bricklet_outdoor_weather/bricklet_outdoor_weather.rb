@@ -22,11 +22,6 @@ module Tinkerforge
       end.to_h
     end
 
-    # Returns configuration data for the device (a mutable Hash).
-    def config
-      @config ||= {}
-    end
-
     private
 
     def _view_21x8
