@@ -4,7 +4,13 @@
 
 ## Unreleased
 
+* `DeviceCollection` class:
+    * Added `#config` method.
+* All Brick and Bricklet classes:
+    * Added `#config` method.
 * Bricklet classes:
+    * `BrickletOutdoorWeather`:
+        * `#sensors` supports configurable sensor-mapping.
     * `BrickletSegmentDisplay4x7V2`:
         * Added `#clock` method.
         * Added `#stop` and `#thread` methods.
