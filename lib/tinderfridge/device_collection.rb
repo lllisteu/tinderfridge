@@ -61,7 +61,7 @@ module Tinkerforge
     # Prints a list of devices in the collection.
     def ls
       keys.sort_by(&:downcase).each do |k|
-        puts "%-8s %.40s" % [k, Tinkerforge.device_info(self[k])[1]]
+        puts "%-8s %.40s" % [k, self[k].device_display_name]
       end.size
     end
 
