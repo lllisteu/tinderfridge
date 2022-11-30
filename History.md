@@ -15,6 +15,8 @@
         * Added `#clock` method.
         * Added `#stop` and `#thread` methods.
         * Added ¯ (macron) and ≡ (triple bar) to the printable glyphs.
+    * `BrickletSolidStateRelayV2`:
+        * `#state` includes relay state (value) and monoflop state.
 
 ## 0.12.0 (22 Jul 2022)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.12.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.12.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.12.0)
