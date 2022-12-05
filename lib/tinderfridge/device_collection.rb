@@ -91,6 +91,18 @@ module Tinkerforge
 
     alias doc open_documentation
 
+    # On Mac OS, opens a new Brick Viewer for each unique
+    # IP Connection used by devices in the collection.
+    #
+    # Not supported on other platforms.
+    #
+    # Requires Brick Viewer version 2.4.23 or later.
+    def open_brick_viewer
+      ipcons.map { |i| i.open_brick_viewer }
+    end
+
+    alias brickv open_brick_viewer
+
     # Turns off light sources such as screens and RGB LEDs for devices in the collection.
     #
     # Ignores devices that do not support the blackout method.
