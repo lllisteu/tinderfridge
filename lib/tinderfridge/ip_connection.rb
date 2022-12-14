@@ -112,7 +112,6 @@ module Tinkerforge
     #
     # Requires Brick Viewer version 2.4.23 or later.
     def open_brick_viewer
-      # TODO: test with brickv 2.4.23
       if RUBY_PLATFORM =~ /darwin/
         `open -n -a Brickv --args #{host} --port #{port}`
         "#{host}:#{port}"
