@@ -4,7 +4,10 @@
 
 ## Unreleased
 
+* `IPConnection` class:
+    * Added `#open_brick_viewer` method and `#brickv` alias.
 * `DeviceCollection` class:
+    * Added `#open_brick_viewer` method and `#brickv` alias.
     * Added `#config` method.
 * All Brick and Bricklet classes:
     * Added `#config` method.
