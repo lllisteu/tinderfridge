@@ -30,6 +30,19 @@ module Tinkerforge
       connect('localhost', port).discover(0.25)
     end
 
+    private
+
+    def _view_21x8
+      "\n" +
+      'Tinkerforge'.center(21) +
+      "\n" +
+      VERSION.center(21) +
+      "\n\n\n\n" +
+      "Tinderfridge #{TINDERFRIDGE_VERSION}".center(21) +
+      "\n" +
+      "Ruby #{RUBY_VERSION}".center(21)
+    end
+
   end
 
 end
