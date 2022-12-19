@@ -106,7 +106,7 @@ module Tinkerforge
     private
 
     def _view_21x8
-      "LCD          #{uid_string.rjust 8}"
+      "LCD128x64    #{uid_string.rjust 8}"
     end
 
   end

@@ -13,13 +13,9 @@ module Tinkerforge
     private
 
     def _view_21x8
-      <<~ET
-      Temp         #{uid_string.rjust 8}
-
-            #{'%6.2f °C' % [get_temperature*0.01]}
-
-              #{get_heater_configuration == 1 ? 'HEATER' : ''}
-      ET
+      "TempV2       #{uid_string.rjust 8}\n\n\n" +
+      ('%.2f °C' % [get_temperature*0.01]).center(21) +
+      (get_heater_configuration == 1 ? "\n\n\n       HEATER" : '')
     end
 
   end

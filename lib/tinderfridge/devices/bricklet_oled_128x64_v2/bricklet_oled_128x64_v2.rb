@@ -86,7 +86,7 @@ module Tinkerforge
     private
 
     def _view_21x8
-      "OLED         #{uid_string.rjust 8}"
+      "OLED128x64V2 #{uid_string.rjust 8}"
     end
 
   end

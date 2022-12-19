@@ -17,11 +17,8 @@ module Tinkerforge
     private
 
     def _view_21x8
-      <<~ET
-      CO2          #{uid_string.rjust 8}
-
-            #{'%5d PPM' % get_co2_concentration}
-      ET
+      "CO2V2        #{uid_string.rjust 8}\n\n\n" +
+      ('%d PPM' % get_co2_concentration).center(21)
     end
 
   end

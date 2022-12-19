@@ -18,11 +18,8 @@ module Tinkerforge
     private
 
     def _view_21x8
-      <<~ET
-      Baro         #{uid_string.rjust 8}
-
-          #{'%7.2f hPa' % [get_air_pressure*0.001]}
-      ET
+      "BaroV2       #{uid_string.rjust 8}\n\n\n" +
+      ('%.2f hPa' % [get_air_pressure*0.001]).center(21)
     end
 
   end

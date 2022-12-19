@@ -14,6 +14,15 @@ module Tinkerforge
       )
     end
 
+    private
+
+    def _view_21x8
+      s = state
+      "AmbiLightV3  #{uid_string.rjust 8}\n\n\n" +
+      ("%.2f Lux" % [0.01 * s['illuminance_raw']]).center(21) + "\n\n\n\n" +
+      ("max %d / %d ms" % [ s['illuminance_range'], s['integration_time'] ]).center(21)
+    end
+
   end
 
 end

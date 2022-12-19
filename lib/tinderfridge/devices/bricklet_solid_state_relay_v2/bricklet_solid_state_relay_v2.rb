@@ -13,8 +13,8 @@ module Tinkerforge
     private
 
     def _view_21x8
-      "SSRv2        #{uid_string.rjust 8}\n\n" +
-      (get_state ? 'On' : 'Off').center(21)
+      "SSRelayV2    #{uid_string.rjust 8}\n\n\n" +
+      (get_state ? 'ON' : 'Off').center(21)
     end
 
   end
