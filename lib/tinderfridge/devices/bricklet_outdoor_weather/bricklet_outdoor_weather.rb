@@ -11,10 +11,14 @@ module Tinkerforge
 
     # Returns the last measured data for all sensors.
     #
-    # The result is a Hash, with sensor identifiers as the keys. Values per sensor are:
+    # The result is a Hash, with sensor identifiers (or their mapped values) as the keys. Values per sensor are:
     # - 0: Temperature (°C)
     # - 1: Relative humidity (%RH)
     # - 2: Last change (seconds)
+    #
+    # Sensor identifiers can be mapped to descriptive strings or other values:
+    # @example
+    #  my_weather_bricklet.config['sensormap'] = { 202 => 'outdoors' }
     def sensors
       sensormap = (config['sensormap'].class == Hash) ? config['sensormap'] : {}
       get_sensor_identifiers.map do |id|
