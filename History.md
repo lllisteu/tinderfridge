@@ -2,16 +2,16 @@
 
 # History
 
-## Unreleased
+## 0.13.0 (21 Dec 2022)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.13.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.13.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.13.0)
 
-* `IPConnection` class:
+*  `DeviceCollection` and `IPConnection` classes:
     * Added `#open_brick_viewer` method and `#brickv` alias.
-* `DeviceCollection` class:
-    * Added `#open_brick_viewer` method and `#brickv` alias.
-    * Added `#config` method.
-* All Brick and Bricklet classes:
+* `DeviceCollection` and all Brick and Bricklet classes:
     * Added `#config` method.
 * Bricklet classes:
+    * `BrickletLCD128x64` and `BrickletOLED128x64V2`:
+        * Improved `#show` method.
     * `BrickletOutdoorWeather`:
         * `#sensors` supports configurable sensor-mapping.
     * `BrickletSegmentDisplay4x7V2`:
