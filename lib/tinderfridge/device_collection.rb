@@ -82,6 +82,16 @@ module Tinkerforge
       smap 'config'
     end
 
+    # Sets configuration data of devices in the collection.
+    def config=(configuration)
+      raise ArgumentError, 'invalid configuration' unless (configuration.class == Hash)
+      each do |k,v|
+        if configuration[k]
+          v.config = configuration[k]
+        end
+      end
+    end
+
     # Opens the online documentation for the devices in the collection (Mac OS only).
     #
     # When the URL for a device's documentation is not known, does nothing.

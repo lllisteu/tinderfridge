@@ -127,6 +127,12 @@ module Tinkerforge
       @config ||= {}
     end
 
+    # Sets configuration data (a Hash) for the device.
+    def config=(configuration)
+      raise(ArgumentError, 'Invalid configuration') unless configuration.class == Hash
+      @config = configuration
+    end
+
     # Opens the online documentation for the device (Mac OS only).
     #
     # When the URL for the documentation is not known, does nothing.
