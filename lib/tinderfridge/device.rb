@@ -80,7 +80,7 @@ module Tinkerforge
 
     # Returns a programmer-friendly representation of the device.
     def inspect
-      "%s (%s@%s:%s)" % [self.class, uid_string, ipcon.host, ipcon.port]
+      "#{self.class} (#{uid_string}" + ( ipcon.host ? "@#{ipcon.host}:#{ipcon.port})" : ')' )
     end
 
     # Returns the device's properties.
