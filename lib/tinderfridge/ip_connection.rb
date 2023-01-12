@@ -15,7 +15,7 @@ module Tinkerforge
 
     # Returns a programmer-friendly representation of the object.
     def inspect
-      "%s (%s:%s)" % [self.class, host, port]
+      "#{self.class} (%s:%s)" % (host ? [host, port] : ['-', '-'] )
     end
 
     # Returns the state of the IP Connection.
