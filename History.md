@@ -4,8 +4,12 @@
 
 ## Unreleased
 
+* `DeviceCollection` and all Brick and Bricklet classes:
+    * Added `#config=` method.
 *  `DeviceCollection` class:
     * Added `#disconnect` method.
+* `IPConnection` and all Brick and Bricklet classes:
+    * Somewhat refined `#inspect`.
 
 ## 0.13.0 (21 Dec 2022)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.13.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.13.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.13.0)
