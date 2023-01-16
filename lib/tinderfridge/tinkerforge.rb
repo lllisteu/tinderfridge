@@ -7,6 +7,8 @@ module Tinkerforge
 
   class << self
 
+    @@logger = nil
+
     # Returns the directory where Tinkerforge bindings appear to be installed.
     def lib_dir
       File.dirname File.dirname Device.instance_method('uid').source_location.first
@@ -28,6 +30,25 @@ module Tinkerforge
     #  Tinkerforge.local.doc
     def local(port=4223)
       connect('localhost', port).discover(0.25)
+    end
+
+    # Assign a Logger object to enable logging of Tinkerforge events.
+    def logger=(logger)
+      if logger
+        if logger.respond_to? :debug
+          @@logger = logger
+          logger.debug(about)
+        else
+          raise ArgumentError, 'Invalid Logger'
+        end
+      else
+        @@logger = nil
+      end
+    end
+
+    # Returns the Logger, or nil
+    def logger
+      @@logger
     end
 
     private
