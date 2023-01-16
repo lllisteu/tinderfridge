@@ -1,4 +1,5 @@
 require 'tinkerforge/ip_connection'
+require 'tinderfridge/shared/logger'
 
 module Tinkerforge
 
@@ -56,6 +57,8 @@ module Tinkerforge
     #                           Instance Methods                           #
     #----------------------------------------------------------------------#
 
+    include Tinkerforge::Shared::Logger
+
     # Returns the device's UID. Not to be confused with #uid, which returns the numeric UID.
     attr_reader :uid_string
 
@@ -67,6 +70,15 @@ module Tinkerforge
 
     # Returns the device's IPConnection object.
     attr_reader :ipcon
+
+    alias original_initialize initialize
+
+    def initialize(uid, ipcon, device_identifier, device_display_name)
+      original_initialize(uid, ipcon, device_identifier, device_display_name)
+      if respond_to? 'get_identity'
+        logger_debug "Created %s '%s'" % [self.class, uid_string]
+      end
+    end
 
     # Returns device information.
     #
