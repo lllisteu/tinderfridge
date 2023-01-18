@@ -95,8 +95,6 @@ module Tinkerforge
             end
           when 2
             list.delete args[0]
-          else
-            raise "Unknown Enumeration Type: #{args[6]}"
         end
       end
 
