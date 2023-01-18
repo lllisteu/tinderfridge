@@ -1,8 +1,11 @@
 require 'tinkerforge/ip_connection'
+require 'tinderfridge/shared/logger'
 
 module Tinkerforge
 
   class IPConnection
+
+    include Tinkerforge::Shared::Logger
 
     # Returns the host for the IP Connection.
     attr_reader :host
@@ -86,6 +89,7 @@ module Tinkerforge
       list = Tinkerforge::DeviceCollection.new
 
       self.register_callback(CALLBACK_ENUMERATE) do |*args|
+        logger_log_enum(args)
         case args[6]
           when 0, 1
             unless list.key?(args[0])
@@ -126,9 +130,17 @@ module Tinkerforge
         require "tinkerforge/#{dev_info[2][1]}"
         Tinkerforge.const_get(dev_info[2][0]).new enum_data[0], self
       else
-        warn "Unknown Device Identifier: #{enum_data[5]} (UID: #{enum_data[0]})"
+        logger_warn "Unknown Device Identifier: #{enum_data[5]} (UID: #{enum_data[0]})"
         nil
       end
+    end
+
+    def logger_log_enum(enum_data)
+      logger_debug(
+        "Device '#{enum_data[0]}' " +
+        ['available', 'connected', 'disconnected'][enum_data[6]] +
+        ( enum_data[6] == 2 ? '' : " (Device Identifier: #{enum_data[5]})" )
+      )
     end
 
   end
