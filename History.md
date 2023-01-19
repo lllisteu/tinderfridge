@@ -4,6 +4,14 @@
 
 ## Unreleased
 
+Introduces the possibility to log events to a `Logger` instance:
+
+* Tinkerforge gains `.logger=` and `.logger` methods.
+* `IPConnection#discover` logs enumeration events.
+* All Brick and Bricklet classes log creation of new instances.
+
+Other changes:
+
 * `DeviceCollection` and all Brick and Bricklet classes:
     * Added `#config=` method.
 *  `DeviceCollection` class:
