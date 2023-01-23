@@ -75,6 +75,31 @@ my_devices.set_status_led_config 0
 
 Also see the [Tinderfridge documentation](https://www.rubydoc.info/gems/tinderfridge).
 
+## Event Logging
+
+With Tinderfridge, it is possible to automatically log certain Tinkerforge events, such as creation of new device instances. This is optional and does not happen by default.
+
+Event logging is done using the [`Logger`](https://rubydoc.info/stdlib/logger) class, which is part of the Ruby Standard Library. `Logger` is simple to use, but has powerful features such as automatic log rotation and customised formatting of messages.
+
+```ruby
+require 'logger'
+Tinkerforge.logger = Logger.new 'my_log.txt'
+
+# Tinkerforge will log events to my_log.txt
+my_devices = Tinkerforge.connect('myhost.local').discover
+```
+
+You can also set up a logger for your program and tell Tinkerforge to use that:
+
+```ruby
+require 'logger'
+log = Logger.new 'my_log.txt'
+log.debug 'My Great App is running!'
+
+# Tell Tinkerforge to use the same log
+Tinkerforge.logger = log 
+```
+
 ## Resources
 
 * Tinkerforge Ruby bindings:
