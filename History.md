@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.14.0 (31 Jan 2023)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.14.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.14.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.14.0)
 
 Introduces the possibility to log events to a `Logger` instance:
 
@@ -12,12 +13,15 @@ Introduces the possibility to log events to a `Logger` instance:
 
 Other changes:
 
+* All Brick and Bricklet classes:
+    * Refined `#inspect` a bit.
 * `DeviceCollection` and all Brick and Bricklet classes:
     * Added `#config=` method.
 *  `DeviceCollection` class:
     * Added `#disconnect` method.
-* `IPConnection` and all Brick and Bricklet classes:
-    * Somewhat refined `#inspect`.
+* `IPConnection`:
+    * Refined `#inspect` somewhat.
+    * Fixed: `#open_brick_viewer` checks for `host`.
 
 ## 0.13.0 (21 Dec 2022)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.13.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.13.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.13.0)

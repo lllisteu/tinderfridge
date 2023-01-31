@@ -3,7 +3,7 @@ require 'tinkerforge/version'
 module Tinkerforge
 
   # Tinderfridge version.
-  TINDERFRIDGE_VERSION = '0.13.5'
+  TINDERFRIDGE_VERSION = '0.14.0'
 
   # About Tinkerforge & Tinderfridge.
   def self.about
