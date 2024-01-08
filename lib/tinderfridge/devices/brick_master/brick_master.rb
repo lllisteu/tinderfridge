@@ -6,6 +6,13 @@ module Tinkerforge
     CHIP_TEMPERATURE_UNIT = 0.1
     # REVIEW: This should ideally be part of base Tinkerforge.
 
+    # Returns the device's state.
+    def state
+      super.merge [
+        respond_to?('get_connection_type'  ) ? ['connection_type'  , get_connection_type] : nil,
+      ].compact.to_h
+    end
+
   end
 
 end
