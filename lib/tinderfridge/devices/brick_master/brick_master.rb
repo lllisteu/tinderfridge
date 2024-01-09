@@ -9,7 +9,8 @@ module Tinkerforge
     # Returns the device's state.
     def state
       super.merge [
-        respond_to?('get_connection_type'  ) ? ['connection_type'  , get_connection_type] : nil,
+        respond_to?('get_connection_type'  ) ? ['connection_type'   , get_connection_type  ] : nil,
+        respond_to?('is_status_led_enabled') ? ['status_led_enabled', is_status_led_enabled] : nil,
       ].compact.to_h
     end
 
