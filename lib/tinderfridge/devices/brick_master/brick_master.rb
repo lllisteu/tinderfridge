@@ -9,9 +9,21 @@ module Tinkerforge
     # Returns the device's state.
     def state
       super.merge [
-        respond_to?('get_connection_type'  ) ? ['connection_type'   , get_connection_type  ] : nil,
-        respond_to?('is_status_led_enabled') ? ['status_led_enabled', is_status_led_enabled] : nil,
+        safe_send_state('connection_type'   , 'get_connection_type'  ), # FW 2.4.0
+        safe_send_state('status_led_enabled', 'is_status_led_enabled'), # FW 2.3.2
       ].compact.to_h
+    end
+
+    private
+
+    # Safely call a method for inclusion in state hash.
+    # When method blows up, state can ignore it.
+    # REVIEW: possible candidate for Device class
+    def safe_send_state(key, methot)
+      [key, send(methot)]
+    rescue => e
+      logger_warn "Device '#{uid_string}': '#{methot}' failed. #{e}"
+      nil
     end
 
   end
