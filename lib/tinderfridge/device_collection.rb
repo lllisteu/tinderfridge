@@ -2,6 +2,8 @@ module Tinkerforge
 
   class DeviceCollection < Hash
 
+    alias devices values
+
     # Returns the temperatures as measured inside the microcontrollers of devices in the collection.
     #
     # Nil for devices that do not support the get_chip_temperature method.
