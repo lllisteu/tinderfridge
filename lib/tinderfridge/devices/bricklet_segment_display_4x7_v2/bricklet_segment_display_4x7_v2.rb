@@ -36,7 +36,7 @@ module Tinkerforge
     end
 
     # Turns all 35 segments on.
-    def all
+    def all_on
       self.segments = [true]*35
     end
 
