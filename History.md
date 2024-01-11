@@ -2,6 +2,18 @@
 
 # History
 
+## Unreleased
+
+* `DeviceCollection`:
+    * Added `#devices` alias for `#values`.
+* `BrickMaster`:
+    * `#state` includes connection type and status led enablement (if supported by firmware).
+* Bricklet classes:
+    * `BrickletParticulateMatter`:
+        * `#state` includes enablement, pm-concentration, pm-count, and sensor info.
+    * `BrickletSegmentDisplay4x7V2`:
+        * Added `#all_on` method.
+    
 ## 0.14.0 (31 Jan 2023)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.14.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.14.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.14.0)
 
