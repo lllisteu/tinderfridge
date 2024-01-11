@@ -23,22 +23,16 @@ module Tinkerforge
     def wifi2_state
       if is_wifi2_present
         [
-          # Draft generated with:
-          # methods.grep(/^get_wifi2_/).map(&:to_s).map { |m| "          safe_send_state('%s', '%s'),\n" % [m.sub(/^get_wifi2_/, ''), m] }.join
           safe_send_state('mesh_configuration', 'get_wifi2_mesh_configuration'), # FW 2.4.2 / 2.1.0
           safe_send_state('mesh_router_ssid', 'get_wifi2_mesh_router_ssid'), # FW 2.4.2 / 2.1.0
-          # safe_send_state('mesh_router_password', 'get_wifi2_mesh_router_password'),
           safe_send_state('mesh_common_status', 'get_wifi2_mesh_common_status'), # FW 2.4.2 / 2.1.0
           safe_send_state('mesh_client_status', 'get_wifi2_mesh_client_status'), # FW 2.4.2 / 2.1.0
           safe_send_state('mesh_ap_status', 'get_wifi2_mesh_ap_status'), # FW 2.4.2 / 2.1.0
-          # safe_send_state('authentication_secret', 'get_wifi2_authentication_secret'),
           safe_send_state('configuration', 'get_wifi2_configuration'), # FW 2.4.0
           safe_send_state('status', 'get_wifi2_status'), # FW 2.4.0
           safe_send_state('client_configuration', 'get_wifi2_client_configuration'), # FW 2.4.0
           safe_send_state('client_hostname', 'get_wifi2_client_hostname'), # FW 2.4.0
-          # safe_send_state('client_password', 'get_wifi2_client_password'),
           safe_send_state('ap_configuration', 'get_wifi2_ap_configuration'), # FW 2.4.0
-          # safe_send_state('ap_password', 'get_wifi2_ap_password'),
           safe_send_state('firmware_version', 'get_wifi2_firmware_version'), # FW 2.4.0
         ].compact.to_h
       end
