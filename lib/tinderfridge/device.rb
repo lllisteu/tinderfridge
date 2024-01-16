@@ -97,9 +97,16 @@ module Tinkerforge
 
     # Returns the device's properties.
     def properties
+
+      # BrickDaemon inherits from Device, but has no #get_identity.
+      return {} unless respond_to? 'get_identity'
+
+      identity = get_identity
+
       @properties ||= [
-        [ 'device_identifier'  , device_identifier   ],
-        [ 'device_display_name', device_display_name ],
+        [ 'device_identifier'  , device_identifier     ],
+        [ 'device_display_name', device_display_name   ],
+        [ 'hardware_version'   , identity[3].join('.') ],
       ].compact.to_h.merge load_properties
     end
 
