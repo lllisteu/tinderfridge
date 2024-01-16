@@ -97,10 +97,10 @@ module Tinkerforge
 
     # Returns the device's properties.
     def properties
-      @properties ||= {
-        'device_identifier'   => device_identifier,
-        'device_display_name' => device_display_name,
-      }.merge load_properties
+      @properties ||= [
+        [ 'device_identifier'  , device_identifier   ],
+        [ 'device_display_name', device_display_name ],
+      ].compact.to_h.merge load_properties
     end
 
     alias props properties
