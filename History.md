@@ -6,11 +6,13 @@
 
 * `DeviceCollection`:
     * Added `#devices` alias for `#values`.
+* All Brick and Bricklet classes:
+    * `#properties` includes hardware version.
 * `BrickMaster`:
     * `#state` includes (if supported by firmware):
         * Connection type and status led enablement.
-        * Presence of extensions.
-    * Added `wifi2_state`.
+        * Presence of extensions (chibi, rs485, wifi, ethernet, wifi2).
+    * Added `#wifi2_state`.
 * Bricklet classes:
     * `BrickletParticulateMatter`:
         * Added `#disable` and `#enable` methods.
