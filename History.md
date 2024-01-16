@@ -7,9 +7,13 @@
 * `DeviceCollection`:
     * Added `#devices` alias for `#values`.
 * `BrickMaster`:
-    * `#state` includes connection type and status led enablement (if supported by firmware).
+    * `#state` includes (if supported by firmware):
+        * Connection type and status led enablement.
+        * Presence of extensions.
+    * Added `wifi2_state`.
 * Bricklet classes:
     * `BrickletParticulateMatter`:
+        * Added `#disable` and `#enable` methods.
         * `#state` includes enablement, pm-concentration, pm-count, and sensor info.
     * `BrickletSegmentDisplay4x7V2`:
         * Added `#all_on` method.
