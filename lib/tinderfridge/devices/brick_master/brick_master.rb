@@ -13,8 +13,8 @@ module Tinkerforge
         safe_send_state('status_led_enabled', 'is_status_led_enabled'), # FW 2.3.2
         safe_send_state('chibi_present'     , 'is_chibi_present'     ),
         safe_send_state('rs485_present'     , 'is_rs485_present'     ),
-        safe_send_state('wifi_present'      , 'is_wifi_present'      ),
         safe_send_state('ethernet_present'  , 'is_ethernet_present'  ), # FW 2.1.0
+        safe_send_state('wifi_present'      , 'is_wifi_present'      ),
         safe_send_state('wifi2_present'     , 'is_wifi2_present'     ), # FW 2.4.0
       ].compact.to_h
     end

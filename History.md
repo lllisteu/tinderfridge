@@ -11,7 +11,7 @@
 * `BrickMaster`:
     * `#state` includes (if supported by firmware):
         * Connection type and status led enablement.
-        * Presence of extensions (chibi, rs485, wifi, ethernet, wifi2).
+        * Presence of extensions (chibi, rs485, ethernet, wifi, wifi2).
     * Added `#wifi2_state`.
 * Bricklet classes:
     * `BrickletParticulateMatter`:
