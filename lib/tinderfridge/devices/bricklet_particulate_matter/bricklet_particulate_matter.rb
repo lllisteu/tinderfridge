@@ -2,10 +2,12 @@ module Tinkerforge
 
   class BrickletParticulateMatter
 
+    # Enables the fan and the laser diode.
     def enable
       set_enable true
     end
 
+    # Disables the fan and the laser diode.
     def disable
       set_enable false
     end
@@ -19,6 +21,8 @@ module Tinkerforge
         'sensor_info'      => get_sensor_info,
       )
     end
+
+    private
 
     def _view_21x8
       "PM           #{uid_string.rjust 8}\n\n" +
