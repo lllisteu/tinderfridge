@@ -16,6 +16,14 @@ module Tinkerforge
 
     private
 
+   def _print_4
+      if (co2 = get_co2_concentration) > 9999
+        ' ol '
+      else
+        '%4d' % co2
+      end
+    end
+
     def _view_21x8
       "CO2V2        #{uid_string.rjust 8}\n\n\n" +
       ('%d PPM' % get_co2_concentration).center(21)
