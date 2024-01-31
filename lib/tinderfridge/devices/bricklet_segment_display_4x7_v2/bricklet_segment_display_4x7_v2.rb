@@ -46,24 +46,28 @@ module Tinkerforge
     end
 
     # Displays a string.
-    def print(text='')
-      out   = ''
-      colon = false
+    def print(text_or_object='')
+      if text_or_object.respond_to?( :_print_4, true)
+        print ( text_or_object.send(:_print_4) rescue '' )
+      else
+        out   = ''
+        colon = false
 
-      text.to_s.chars.each do |c|
-        if glyphs.key? c
-          out << glyphs[c] << '0'
-        elsif c == '.' and out[-1] == '0'
-          out[-1] = '1'
-        elsif c == ':' and out.size == 16
-          colon = true
-        else
-          raise "Can not display '#{text}'"
+        text_or_object.to_s.chars.each do |c|
+          if glyphs.key? c
+            out << glyphs[c] << '0'
+          elsif c == '.' and out[-1] == '0'
+            out[-1] = '1'
+          elsif c == ':' and out.size == 16
+            colon = true
+          else
+            raise "Can not display '#{text}'"
+          end
         end
-      end
 
-      self.segments_string = out[0,32].ljust(32,'0') + ( colon ? '110' : '000' )
-      nil
+        self.segments_string = out[0,32].ljust(32,'0') + ( colon ? '110' : '000' )
+        nil
+      end
     end
 
     # Returns the definition of glyphs for Unicode chracters.
