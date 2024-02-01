@@ -16,6 +16,22 @@ module Tinkerforge
     # Returns the network socket used by the IP Connection.
     attr_reader :socket
 
+    alias original_connect connect
+
+    def connect(host, port)
+      logger_debug "Connecting to #{host}:#{port}"
+      original_connect(host, port)
+      logger_debug "Connected  to #{host}:#{port}"
+    end
+
+    alias original_disconnect disconnect
+
+    def disconnect
+      logger_debug "Disconnecting from #{host}:#{port}"
+      original_disconnect
+      logger_debug "Disconnected  from #{host}:#{port}"
+    end
+
     # Returns a programmer-friendly representation of the object.
     def inspect
       "#{self.class} (%s:%s)" % (host ? [host, port] : ['-', '-'] )
