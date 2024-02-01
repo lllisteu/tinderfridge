@@ -6,6 +6,7 @@
 
 * `DeviceCollection`:
     * Added `#devices` alias for `#values`.
+    * `#disconnect` now removes all devices from the collection.
 * All Brick and Bricklet classes:
     * `#properties` includes hardware version.
 * `BrickMaster`:
@@ -20,7 +21,9 @@
     * `BrickletSegmentDisplay4x7V2`:
         * Added `#all_on` method.
         * Added (B, N, Y) and refined (y) printable glyphs.
-    
+* `IPConnection`:
+    * Connecting to and disconnecting from a host are logged (when event logging is enabled).
+
 ## 0.14.0 (31 Jan 2023)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.14.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.14.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.14.0)
 
