@@ -127,9 +127,11 @@ module Tinkerforge
       smap('ipcon').values.compact.uniq
     end
 
-    # Disconnects IP Connections used by devices in the collection.
+    # Disconnects IP Connections used by devices in the collection, and removes all devices from the collection.
     def disconnect
-      ipcons.map { |i| [i, (i.get_connection_state == 0 ? nil : i.disconnect) ] }.to_h
+      result = ipcons.map { |i| [i, (i.get_connection_state == 0 ? nil : i.disconnect) ] }.to_h
+      clear
+      result
     end
 
     # Returns an array of devices in the collection matching the selector.
