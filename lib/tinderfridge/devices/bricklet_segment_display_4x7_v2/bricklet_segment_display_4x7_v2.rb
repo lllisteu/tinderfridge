@@ -61,7 +61,7 @@ module Tinkerforge
           elsif c == ':' and out.size == 16
             colon = true
           else
-            raise "Can not display '#{text}'"
+            raise "Can not display character '#{c}'"
           end
         end
 
