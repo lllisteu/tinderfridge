@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.15.0 (6 Feb 2024)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.15.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.15.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.15.0)
 
 * `DeviceCollection`:
     * Added `#devices` alias for `#values`.
