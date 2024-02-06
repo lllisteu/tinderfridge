@@ -18,6 +18,7 @@ module Tinkerforge
 
     alias original_connect connect
 
+    # Creates a TCP/IP connection to the given host and port. Logs events if event logging is enabled.
     def connect(host, port)
       logger_debug "Connecting to #{host}:#{port}"
       original_connect(host, port)
@@ -26,6 +27,7 @@ module Tinkerforge
 
     alias original_disconnect disconnect
 
+    # Disconnects the TCP/IP connection. Logs events if event logging is enabled.
     def disconnect
       logger_debug "Disconnecting from #{host}:#{port}"
       original_disconnect
