@@ -148,14 +148,14 @@ module Tinkerforge
         require "tinkerforge/#{dev_info[2][1]}"
         Tinkerforge.const_get(dev_info[2][0]).new enum_data[0], self
       else
-        logger_warn "Unknown Device Identifier: #{enum_data[5]} (UID: #{enum_data[0]})"
+        logger_warn "[ #{enum_data[0]} ] Unknown Device Identifier: #{enum_data[5]}"
         nil
       end
     end
 
     def logger_log_enum(enum_data)
       logger_debug(
-        "Device '#{enum_data[0]}' " +
+        "[ #{enum_data[0]} ] Device " +
         ['available', 'connected', 'disconnected'][enum_data[6]] +
         ( enum_data[6] == 2 ? '' : " (Device Identifier: #{enum_data[5]})" )
       )
