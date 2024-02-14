@@ -76,7 +76,7 @@ module Tinkerforge
     def initialize(uid, ipcon, device_identifier, device_display_name)
       original_initialize(uid, ipcon, device_identifier, device_display_name)
       if respond_to? 'get_identity'
-        logger_debug "Created %s '%s'" % [self.class, uid_string]
+        logger_debug "[ %s ] Created %s" % [uid_string, self.class]
       end
     end
 
