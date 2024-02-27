@@ -1,0 +1,11 @@
+{
+  "dimensions": [
+    40,
+    40,
+    16
+  ],
+  "weight": 29,
+  "documentation_en_url": "https://www.tinkerforge.com/en/doc/Hardware/Bricklets/Industrial_Dual_AC_In.html",
+  "versions_identifier": "bricklets:industrial_dual_ac_in",
+  "released": "2023-05-12"
+}
