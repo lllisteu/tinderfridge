@@ -145,3 +145,4 @@
 2165	DC Bricklet 2.0	Tinkerforge::BrickletDCV2	bricklet_dc_v2
 2166	Silent Stepper Bricklet 2.0	Tinkerforge::BrickletSilentStepperV2	bricklet_silent_stepper_v2
 2171	GPS Bricklet 3.0	Tinkerforge::BrickletGPSV3	bricklet_gps_v3
+2174	Industrial Dual AC In Bricklet	Tinkerforge::BrickletIndustrialDualACIn	bricklet_industrial_dual_ac_in
