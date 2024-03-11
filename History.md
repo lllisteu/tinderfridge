@@ -2,6 +2,17 @@
 
 # History
 
+## Unreleased
+
+* Added support for the new Industrial Dual AC In Bricklet
+* All Brick and Bricklet classes:
+    * Tweaked format of log messages.
+* Bricklet classes:
+    * `BrickletSegmentDisplay4x7V2`:
+        * Fixed a bug with handling unprintable characters.
+* `IPConnection`:
+    * Tweaked format of log messages.
+        
 ## 0.15.0 (6 Feb 2024)
 [GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.15.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.15.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.15.0)
 
