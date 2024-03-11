@@ -4,7 +4,7 @@
 
 ## Unreleased
 
-* Added support for the new Industrial Dual AC In Bricklet
+* Added support for the new Industrial Dual AC In Bricklet.
 * All Brick and Bricklet classes:
     * Tweaked format of log messages.
 * Bricklet classes:
