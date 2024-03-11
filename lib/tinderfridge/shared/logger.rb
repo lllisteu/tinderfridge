@@ -16,31 +16,39 @@ module Tinkerforge
 
       def logger_debug(msg)
         if logger
-          logger.debug(msg)
+          logger.debug(logger_format msg)
         end
       end
 
       def logger_info(msg)
         if logger
-          logger.info(msg)
+          logger.info(logger_format msg)
         end
       end
 
       def logger_warn(msg)
         if logger
-          logger.warn(msg)
+          logger.warn(logger_format msg)
         end
       end
 
       def logger_error(msg)
         if logger
-          logger.error(msg)
+          logger.error(logger_format msg)
         end
       end
 
       def logger_fatal(msg)
         if logger
-          logger.fatal(msg)
+          logger.fatal(logger_format msg)
+        end
+      end
+
+      def logger_format(msg)
+        if respond_to? 'uid_string'
+          "[ #{uid_string} ] #{msg}"
+        else
+          msg
         end
       end
 
