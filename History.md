@@ -11,6 +11,7 @@
     * `BrickletSegmentDisplay4x7V2`:
         * Fixed a bug with handling unprintable characters.
 * `IPConnection`:
+    * `#connect` now logs elapsed time.
     * Tweaked format of log messages.
         
 ## 0.15.0 (6 Feb 2024)

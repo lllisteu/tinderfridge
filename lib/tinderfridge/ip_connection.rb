@@ -20,9 +20,10 @@ module Tinkerforge
 
     # Creates a TCP/IP connection to the given host and port. Logs events if event logging is enabled.
     def connect(host, port)
-      logger_debug "Connecting to #{host}:#{port}"
+      logger_debug "Connecting to %s:%s"          % [host, port]
+      ts = Time.now.to_f
       original_connect(host, port)
-      logger_debug "Connected  to #{host}:#{port}"
+      logger_debug "Connected  to %s:%s (%5.3fs)" % [host, port, Time.now.to_f - ts]
     end
 
     alias original_disconnect disconnect
