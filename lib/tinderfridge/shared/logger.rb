@@ -14,41 +14,48 @@ module Tinkerforge
         Tinkerforge.logger
       end
 
-      def logger_debug(msg)
-        if logger
-          logger.debug(logger_format msg)
-        end
+      def logger_debug(message='', &block)
+        logger_log(0, message, &block)
       end
 
-      def logger_info(msg)
-        if logger
-          logger.info(logger_format msg)
-        end
+      def logger_info(message='', &block)
+        logger_log(1, message, &block)
       end
 
-      def logger_warn(msg)
-        if logger
-          logger.warn(logger_format msg)
-        end
+      def logger_warn(message='', &block)
+        logger_log(2, message, &block)
       end
 
-      def logger_error(msg)
-        if logger
-          logger.error(logger_format msg)
-        end
+      def logger_error(message='', &block)
+        logger_log(3, message, &block)
       end
 
-      def logger_fatal(msg)
-        if logger
-          logger.fatal(logger_format msg)
-        end
+      def logger_fatal(message='', &block)
+        logger_log(4, message, &block)
       end
 
-      def logger_format(msg)
+      def logger_log(level, message='', &block)
+        return unless logger
+
+        if message.empty? and block_given?
+          message = yield
+        end
+
         if respond_to? 'uid_string'
-          "[ #{uid_string} ] #{msg}"
-        else
-          msg
+          message = "[ #{uid_string} ] #{message}"
+        end
+
+        case level
+          when 0
+            logger.debug(message)
+          when 1
+            logger.info(message)
+          when 2
+            logger.warn(message)
+          when 3
+            logger.error(message)
+          when 4
+            logger.fatal(message)
         end
       end
 
