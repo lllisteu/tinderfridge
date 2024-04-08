@@ -1,5 +1,6 @@
 require 'tinkerforge/ip_connection'
 require 'tinderfridge/shared/logger'
+require 'tinderfridge/device/configuration'
 
 module Tinkerforge
 
@@ -139,17 +140,6 @@ module Tinkerforge
         respond_to?('get_status_led_config' ) ? [ 'status_led_config' , get_status_led_config  ] : nil,
 
       ].compact.to_h
-    end
-
-    # Returns configuration data for the device (a mutable Hash).
-    def config
-      @config ||= {}
-    end
-
-    # Sets configuration data (a Hash) for the device.
-    def config=(configuration)
-      raise(ArgumentError, 'Invalid configuration') unless configuration.class == Hash
-      @config = configuration
     end
 
     # Opens the online documentation for the device (Mac OS only).
