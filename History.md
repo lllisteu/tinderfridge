@@ -2,7 +2,8 @@
 
 # History
 
-## Unreleased
+## 0.16.0 (14 Apr 2024)
+[GitHub](https://github.com/lllisteu/tinderfridge/releases/tag/v0.16.0) • [RubyGems](https://rubygems.org/gems/tinderfridge/versions/0.16.0) • [Documentation](https://www.rubydoc.info/gems/tinderfridge/0.16.0)
 
 * Added support for the new Industrial Dual AC In Bricklet.
 * Tweaked layout of various log messages.
