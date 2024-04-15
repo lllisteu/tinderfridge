@@ -32,6 +32,27 @@ module Tinkerforge
       )
     end
 
+    # Configures the device by applying settings.
+    def configure
+      super
+
+      if settings.has_key? 'chip_type'
+        set_chip_type settings['chip_type'].to_i
+      end
+
+      if settings.has_key? 'channel_mapping'
+        set_channel_mapping settings['channel_mapping'].to_i
+      end
+
+      if settings.has_key? 'frame_duration'
+        set_frame_duration settings['frame_duration'].to_i
+      end
+
+      if settings.has_key? 'clock_frequency'
+        set_clock_frequency settings['clock_frequency'].to_i
+      end
+    end
+
     private
 
     def lookup_channel_mapping(selector=nil)
