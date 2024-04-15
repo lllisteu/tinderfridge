@@ -29,6 +29,14 @@ module Tinkerforge
       )
     end
 
+    # Configures the device by applying settings.
+    def configure
+      super
+      if settings.has_key? 'color'
+        set_color *settings['color']
+      end
+    end
+
   end
 
 end
