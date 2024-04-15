@@ -98,6 +98,11 @@ module Tinkerforge
 
     alias config= settings=
 
+    # Configures the devices in the collection by applying settings.
+    def configure
+      smap 'configure'
+    end
+
     # Opens the online documentation for the devices in the collection (Mac OS only).
     #
     # When the URL for a device's documentation is not known, does nothing.
