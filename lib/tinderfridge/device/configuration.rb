@@ -16,5 +16,23 @@ module Tinkerforge
 
     alias config= settings=
 
+    # Configures the device by applying settings.
+    def configure
+      case status_led_api_variety
+        when 2
+          if settings.has_key? 'status_led_config'
+            set_status_led_config settings['status_led_config'].to_i
+          end
+        when 1
+          if settings.has_key? 'status_led_enabled'
+            if !!settings['status_led_enabled']
+              enable_status_led
+            else
+              disable_status_led
+            end
+          end
+      end
+    end
+
   end
 end
