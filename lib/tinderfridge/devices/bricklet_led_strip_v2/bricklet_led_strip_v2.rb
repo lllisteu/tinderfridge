@@ -37,7 +37,9 @@ module Tinkerforge
       super
 
       if settings.has_key? 'chip_type'
-        set_chip_type settings['chip_type'].to_i
+        if settings['chip_type'].to_i != get_chip_type
+          set_chip_type settings['chip_type'].to_i
+        end
       end
 
       if settings.has_key? 'channel_mapping'
@@ -49,7 +51,9 @@ module Tinkerforge
       end
 
       if settings.has_key? 'clock_frequency'
-        set_clock_frequency settings['clock_frequency'].to_i
+        if settings['clock_frequency'].to_i != get_clock_frequency
+          set_clock_frequency settings['clock_frequency'].to_i
+        end
       end
     end
 
