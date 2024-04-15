@@ -79,20 +79,24 @@ module Tinkerforge
       smap 'state'
     end
 
-    # Returns configuration data of devices in the collection.
-    def config
-      smap 'config'
+    # Returns settings for the devices in the collection.
+    def settings
+      smap 'settings'
     end
 
-    # Sets configuration data of devices in the collection.
-    def config=(configuration)
-      raise ArgumentError, 'invalid configuration' unless (configuration.class == Hash)
+    alias config settings
+
+    # Defines settings for the devices in the collection.
+    def settings=(settings_hash)
+      raise ArgumentError, 'invalid settings' unless (settings_hash.class == Hash)
       each do |k,v|
-        if configuration[k]
-          v.config = configuration[k]
+        if settings_hash[k]
+          v.settings = settings_hash[k]
         end
       end
     end
+
+    alias config= settings=
 
     # Opens the online documentation for the devices in the collection (Mac OS only).
     #

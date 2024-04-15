@@ -1,16 +1,20 @@
 module Tinkerforge
   class Device
 
-    # Returns configuration data for the device (a mutable Hash).
-    def config
-      @config ||= {}
+    # Returns settings for the device (a mutable Hash).
+    def settings
+      @settings ||= {}
     end
 
-    # Sets configuration data (a Hash) for the device.
-    def config=(configuration)
-      raise(ArgumentError, 'Invalid configuration') unless configuration.class == Hash
-      @config = configuration
+    alias config settings
+
+    # Defines settings for the device (a Hash).
+    def settings=(settings_hash)
+      raise(ArgumentError, 'Invalid settings') unless settings_hash.class == Hash
+      @settings = settings_hash
     end
+
+    alias config= settings=
 
   end
 end
