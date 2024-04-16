@@ -45,6 +45,14 @@ module Tinkerforge
       super.merge( 'brightness' => get_brightness )
     end
 
+    # Configures the device by applying settings.
+    def configure
+      super
+      if settings.has_key? 'brightness'
+        set_brightness settings['brightness'].to_i
+      end
+    end
+
     # Displays a string.
     def print(text_or_object='')
       if text_or_object.respond_to?( :_print_4, true)
