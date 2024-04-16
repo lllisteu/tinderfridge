@@ -12,6 +12,14 @@ module Tinkerforge
         )
       end
 
+      # Configures the device by applying settings.
+      def configure
+        super
+        if settings.has_key? 'fix_led_config'
+          set_fix_led_config settings['fix_led_config'].to_i
+        end
+      end
+
       # Returns true if a fix is available.
       def fix?
         get_status[0]
