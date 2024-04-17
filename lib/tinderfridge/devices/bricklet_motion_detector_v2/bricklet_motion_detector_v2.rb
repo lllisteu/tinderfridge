@@ -17,6 +17,14 @@ module Tinkerforge
       )
     end
 
+    # Configures the device by applying settings.
+    def configure
+      super
+      if settings.has_key? 'sensitivity'
+        set_sensitivity settings['sensitivity'].to_i
+      end
+    end
+
   end
 
 end
