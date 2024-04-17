@@ -18,9 +18,9 @@ module Tinkerforge
     #
     # Sensor identifiers can be mapped to descriptive strings or other values:
     # @example
-    #  my_weather_bricklet.config['sensormap'] = { 202 => 'outdoors' }
+    #  my_weather_bricklet.settings['sensormap'] = { 202 => 'outdoors' }
     def sensors
-      sensormap = (config['sensormap'].class == Hash) ? config['sensormap'] : {}
+      sensormap = (settings['sensormap'].class == Hash) ? settings['sensormap'] : {}
       get_sensor_identifiers.map do |id|
         [ (sensormap[id] || id), get_sensor_data(id).each_with_index.map { |v,i| i == 0 ? v/10.0 : v } ]
       end.to_h
