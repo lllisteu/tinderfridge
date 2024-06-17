@@ -14,6 +14,14 @@ module Tinkerforge
       )
     end
 
+    # Configures the device by applying settings.
+    def configure
+      super
+      if settings.has_key? 'configuration'
+        set_configuration *settings['configuration']
+      end
+    end
+
     private
 
     def _view_21x8
