@@ -18,6 +18,11 @@ module Tinkerforge
 
     # Configures the device by applying settings.
     def configure
+      if settings.any?
+        logger_debug "Configuring #{settings.keys.map(&:to_s).join(', ')}"
+      else
+        logger_debug "Configuring (no settings)"
+      end
       case status_led_api_variety
         when 2
           if settings.has_key? 'status_led_config'
